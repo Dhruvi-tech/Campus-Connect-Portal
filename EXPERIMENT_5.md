@@ -253,6 +253,22 @@ const handleToggleAssignment = (id) => {
 | **TC-08** | Click "Access Faculty View" / "Admin View" | Role card updates; corresponding role portal and specialized tabs render | **PASS** |
 | **TC-09** | Production Build | `npm run build` completes with 0 errors | **PASS** |
 
+### 10.1 Real-Time Step-by-Step Screenshots (Saved Locally in `/screenshots`)
+
+The real-time step-by-step test screenshots are saved locally in the `screenshots/` folder on the local machine for lab reports, printouts, and digital submissions:
+
+| Step # | Demonstrated Feature | Local File Path |
+| :---: | :--- | :--- |
+| **Step 1** | Role Selection Grid (`RoleCard` Components & Props) | `screenshots/01_role_views_overview.png` |
+| **Step 2** | Student Portal Overview & Notices Tab (Classroom Demo) | `screenshots/02_student_portal_notices.png` |
+| **Step 3** | Interactive Notice Details Modal (`DetailModal` & State) | `screenshots/03_notice_detail_modal.png` |
+| **Step 4** | Enrolled Course Assignments Tab | `screenshots/04_assignments_tab.png` |
+| **Step 5** | Assignment State Mutation (Pending ⟷ Submitted) | `screenshots/05_assignment_submitted_state.png` |
+| **Step 6** | Real-Time Attendance Tracker with Progress Bar | `screenshots/06_track_attendance_tab.png` |
+| **Step 7** | Dynamic Attendance Increment (`+ Check In` Action) | `screenshots/07_attendance_incremented.png` |
+| **Step 8** | Student Academic Profile Overview | `screenshots/08_student_profile_tab.png` |
+| **Step 9** | Component Reusability across Roles (Faculty View) | `screenshots/09_faculty_portal_view.png` |
+
 ---
 
 ## 11. Conclusion
