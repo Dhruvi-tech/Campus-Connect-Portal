@@ -203,4 +203,4 @@ cardContainer: {
     cursor: 'pointer'
   }
 
-};
+}; 

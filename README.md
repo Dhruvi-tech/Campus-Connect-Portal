@@ -81,6 +81,23 @@ Designed with clean typography, responsive layout, and modern interactive module
       </ul>
     </td>
   </tr>
+  <tr>
+    <td colspan="2">
+      <h4>🧩 Interactive Component-Based Role Portal System</h4>
+      <ul>
+        <li><b>Dynamic Role Cards:</b> Reusable <code>RoleCard</code> components parameterized with props for Student, Faculty, and Admin roles.</li>
+        <li><b>Interactive Portal View:</b> Responsive container with dark slate <code>PortalHeader</code>, amber <code>← Back to Main Campus View</code> button, and dynamic <code>TabBar</code>.</li>
+        <li><b>State-Driven Tab Content:</b>
+          <ul>
+            <li><b>Notices & Events:</b> Displays real-time circulars with interactive <code>[View Details]</code> modal dialogs (<code>DetailModal</code>).</li>
+            <li><b>Course Assignments:</b> Interactive submission workflow updating status from Pending to Submitted dynamically.</li>
+            <li><b>Attendance Tracker:</b> Live attendance percentage computation with <code>+ Check In</code> simulator and progress bars.</li>
+            <li><b>Student Profile:</b> Comprehensive academic metrics and editable status bio.</li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
 ---
@@ -126,11 +143,19 @@ campus-connect-portal/
 │   ├── vite.config.js               # Vite bundler configuration
 │   └── src/
 │       ├── main.jsx                 # React root bootstrap
+│       ├── App.jsx                  # Top-level layout & active role state container
 │       ├── carousel.js              # Interactive carousel controller logic
 │       ├── style.css                # Global stylesheet & design tokens
+│       ├── portal.css               # Modular portal styling & modals
 │       ├── assets/                  # Campus imagery & visual media
 │       └── components/
-│           └── AuthModule.jsx       # Student login & registration component
+│           ├── AuthModule.jsx       # Student login & registration component
+│           ├── RoleCard.jsx         # Reusable role card component (props-based)
+│           ├── PortalView.jsx       # Parent portal container with state & tabs
+│           ├── PortalHeader.jsx     # Portal slate header with back navigation
+│           ├── TabBar.jsx           # Reusable tab navigation bar component
+│           ├── ItemCard.jsx         # Reusable item & notice card row component
+│           └── DetailModal.jsx      # Modal popup dialog for item circular details
 ├── server/                          # Backend API Architecture
 │   ├── package.json                 # Server dependencies & scripts
 │   └── src/
@@ -140,7 +165,7 @@ campus-connect-portal/
 │       ├── middleware/              # Auth & error middlewares
 │       └── models/                  # Database schemas
 ├── package.json                     # Root configuration
-└── README.md                        # Documentation
+└── README.md                        # Project documentation & overview
 ```
 
 ---
