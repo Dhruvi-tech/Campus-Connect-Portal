@@ -1,30 +1,82 @@
 // Campus Connect Portal - App.jsx
-// Experiment 5: Building Modular Frontend Applications Using a Component-Based Approach (React)
+// Integrates Component-Based Architecture (Student, Faculty, Admin Portals) with React Routing & Express Backend
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import RoleCard from './components/RoleCard.jsx';
 import PortalView from './components/PortalView.jsx';
 import AuthModule from './components/AuthModule.jsx';
 import './portal.css';
 
 function App() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   // Top-level application state: currently selected portal view
   const [activeRole, setActiveRole] = useState('student');
+  const [authMode, setAuthMode] = useState('register');
 
-  // Event handler for role selection with smooth scroll into view
+  // Synchronize URL route with active portal role or auth mode
+  useEffect(() => {
+    const path = location.pathname.toLowerCase();
+    const hash = window.location.hash.toLowerCase();
+
+    if (path.startsWith('/student')) {
+      setActiveRole('student');
+    } else if (path.startsWith('/faculty')) {
+      setActiveRole('faculty');
+    } else if (path.startsWith('/admin')) {
+      setActiveRole('admin');
+    } else if (path === '/login' || hash === '#login') {
+      setAuthMode('login');
+      scrollToAuth();
+    } else if (path === '/register' || hash === '#register') {
+      setAuthMode('register');
+      scrollToAuth();
+    }
+
+    const handleHash = () => {
+      if (window.location.hash === '#login') {
+        setAuthMode('login');
+        scrollToAuth();
+      } else if (window.location.hash === '#register') {
+        setAuthMode('register');
+        scrollToAuth();
+      } else if (window.location.hash === '#roles') {
+        const rolesElem = document.getElementById('roles');
+        if (rolesElem) rolesElem.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
+  }, [location.pathname]);
+
+  const scrollToAuth = () => {
+    setTimeout(() => {
+      const regElem = document.getElementById('register');
+      if (regElem) {
+        regElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 100);
+  };
+
+  // Event handler for role selection with smooth scroll into view and URL update
   const handleSelectRole = (role) => {
     setActiveRole(role);
-    // Smooth scroll down to the active portal view
+    navigate(`/${role}`);
+
     setTimeout(() => {
       const portalElem = document.getElementById('active-portal-view');
       if (portalElem) {
         portalElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-    }, 50);
+    }, 60);
   };
 
   const handleClosePortal = () => {
     setActiveRole(null);
+    navigate('/');
   };
 
   return (
@@ -89,7 +141,7 @@ function App() {
           />
         </div>
 
-        {/* 2. Dynamic Portal Container (Shown when a role is selected) */}
+        {/* 2. Dynamic Portal Container (Student, Faculty, or Admin) */}
         {activeRole && (
           <PortalView
             role={activeRole}
@@ -99,8 +151,8 @@ function App() {
       </section>
 
       {/* 3. Student Registration & Authentication Module */}
-      <section id="register" className="registration-section" style={{ width: '100%' }}>
-        <AuthModule initialMode="register" />
+      <section id="register" className="registration-section" style={{ width: '100%', marginTop: '30px' }}>
+        <AuthModule initialMode={authMode} />
       </section>
     </div>
   );

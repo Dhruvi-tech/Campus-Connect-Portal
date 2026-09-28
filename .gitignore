@@ -6,10 +6,16 @@ client/capture_distinct_real_screenshots.js
 client/build_lab_doc.py
 *.docx
 
+# Environment variables & secrets
+.env
+*.env
+.env.local
+
 # Dependencies & Build artifacts
 node_modules/
 dist/
 dist-ssr/
+build/
 *.local
 
 # Logs
