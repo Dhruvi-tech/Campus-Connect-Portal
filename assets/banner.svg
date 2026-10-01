@@ -1,97 +1,145 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 335" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#07182f" />
-      <stop offset="50%" stop-color="#0d3b2e" />
-      <stop offset="100%" stop-color="#0a2240" />
+    <!-- Deep Obsidian High-Tech Gradients -->
+    <linearGradient id="mainBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040914" />
+      <stop offset="35%" stop-color="#061826" />
+      <stop offset="70%" stop-color="#09241e" />
+      <stop offset="100%" stop-color="#050e1c" />
     </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+
+    <!-- Holographic Aurora Title Gradient -->
+    <linearGradient id="auroraTitle" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="50%" stop-color="#f0fdf4" />
-      <stop offset="100%" stop-color="#86efac" />
+      <stop offset="25%" stop-color="#e0f2fe" />
+      <stop offset="55%" stop-color="#38bdf8" />
+      <stop offset="85%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#a78bfa" />
     </linearGradient>
-    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0d5c3a" />
-      <stop offset="100%" stop-color="#15803d" />
+
+    <!-- Glassmorphism Card Gradients -->
+    <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)" />
     </linearGradient>
-    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#107c41" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.15" />
+
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.45)" />
+      <stop offset="50%" stop-color="rgba(52, 211, 153, 0.3)" />
+      <stop offset="100%" stop-color="rgba(167, 139, 250, 0.2)" />
     </linearGradient>
-    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d6a11e" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#107c41" stop-opacity="0.4" />
+
+    <linearGradient id="badgeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
-    </filter>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+
+    <!-- Tech Cyber Mesh Pattern -->
+    <pattern id="dotMatrix" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.2" fill="rgba(255, 255, 255, 0.06)" />
     </pattern>
+
+    <!-- Drop Shadows & Ambient Glows -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
     <style>
-      .pulse-circle {
-        animation: pulse 4s infinite ease-in-out;
+      @keyframes floatOrb {
+        0%, 100% { transform: translate(0px, 0px) scale(1); opacity: 0.22; }
+        50% { transform: translate(30px, -20px) scale(1.1); opacity: 0.35; }
       }
-      @keyframes pulse {
-        0%, 100% { opacity: 0.15; transform: scale(1); }
-        50% { opacity: 0.3; transform: scale(1.06); }
+      @keyframes pulseDot {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.3); }
       }
-      .title-text {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        font-weight: 800;
-        letter-spacing: 2.5px;
+      .anim-orb-1 { animation: floatOrb 8s infinite ease-in-out; }
+      .anim-orb-2 { animation: floatOrb 10s infinite ease-in-out reverse; }
+      .pulse-indicator { animation: pulseDot 2s infinite ease-in-out; transform-origin: center; }
+      .hero-font {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: 3.5px;
       }
-      .sub-text {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        font-weight: 500;
-        letter-spacing: 0.6px;
+      .code-font {
+        font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
       }
     </style>
   </defs>
 
-  <!-- Background Base -->
-  <rect width="1200" height="340" rx="16" fill="url(#bgGrad)" />
-  <rect width="1200" height="340" rx="16" fill="url(#grid)" />
+  <!-- Base Canvas Background -->
+  <rect width="1200" height="335" rx="18" fill="url(#mainBg)" />
+  <rect width="1200" height="335" rx="18" fill="url(#dotMatrix)" />
 
-  <!-- Ambient Glow Orbs -->
-  <circle cx="160" cy="90" r="140" fill="#107c41" opacity="0.18" class="pulse-circle" />
-  <circle cx="1060" cy="180" r="160" fill="#d6a11e" opacity="0.10" />
-
-  <!-- Flowing Bottom Waves -->
-  <path d="M 0,270 C 300,230 600,310 900,260 C 1050,235 1150,250 1200,270 L 1200,340 L 0,340 Z" fill="url(#wave1)" />
-  <path d="M 0,290 C 250,325 550,255 850,295 C 1020,315 1120,290 1200,305 L 1200,340 L 0,340 Z" fill="url(#wave2)" />
-
-  <!-- Top Department Badge -->
-  <g transform="translate(600, 58)" filter="url(#shadow)">
-    <rect x="-240" y="-18" width="480" height="36" rx="18" fill="url(#badgeGrad)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
-    <circle cx="-215" cy="0" r="5" fill="#4ade80">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
-    </circle>
-    <text x="-200" y="5" fill="#ffffff" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif" letter-spacing="1.5">RV UNIVERSITY • COMPUTER SCIENCE &amp; ENGINEERING</text>
+  <!-- Ambient Radiant Orbs -->
+  <g filter="url(#neonGlow)">
+    <circle cx="180" cy="100" r="150" fill="#0284c7" class="anim-orb-1" />
+    <circle cx="1020" cy="180" r="160" fill="#10b981" class="anim-orb-2" />
+    <circle cx="600" cy="300" r="130" fill="#6366f1" opacity="0.15" />
   </g>
 
-  <!-- Main Portal Title -->
-  <text x="600" y="146" text-anchor="middle" class="title-text" font-size="44" fill="url(#textGrad)" filter="url(#shadow)">CAMPUS CONNECT PORTAL</text>
+  <!-- Futuristic Border Highlight -->
+  <rect x="2" y="2" width="1196" height="331" rx="17" fill="none" stroke="url(#glassBorder)" stroke-width="1.5" />
 
-  <!-- Subtitle Tagline -->
-  <text x="600" y="188" text-anchor="middle" class="sub-text" font-size="17" fill="#cbd5e1">Unified Digital Gateway for Students, Faculty &amp; Academic Administration</text>
+  <!-- Corner Aesthetic Accents -->
+  <path d="M 25 45 L 25 22 L 48 22" fill="none" stroke="#38bdf8" stroke-width="2.5" opacity="0.7"/>
+  <path d="M 1175 45 L 1175 22 L 1152 22" fill="none" stroke="#34d399" stroke-width="2.5" opacity="0.7"/>
+  <path d="M 25 290 L 25 313 L 48 313" fill="none" stroke="#34d399" stroke-width="2.5" opacity="0.7"/>
+  <path d="M 1175 290 L 1175 313 L 1152 313" fill="none" stroke="#38bdf8" stroke-width="2.5" opacity="0.7"/>
 
-  <!-- Feature Pills Row -->
-  <g transform="translate(600, 236)">
-    <!-- Pill 1 -->
-    <g transform="translate(-250, 0)">
-      <rect x="-90" y="-14" width="180" height="28" rx="14" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-      <text x="0" y="5" text-anchor="middle" fill="#e2e8f0" font-size="12" font-family="'Segoe UI', sans-serif" font-weight="600">📚 CS3301 Full Stack</text>
+  <!-- Top Status Badge -->
+  <g transform="translate(600, 48)" filter="url(#cardShadow)">
+    <rect x="-240" y="-16" width="480" height="32" rx="16" fill="url(#badgeGlow)" opacity="0.95" />
+    <rect x="-239" y="-15" width="478" height="30" rx="15" fill="#04121e" />
+    
+    <!-- Pulsing Radar Dot -->
+    <circle cx="-208" cy="0" r="4.5" fill="#34d399" class="pulse-indicator" />
+    <circle cx="-208" cy="0" r="8" fill="none" stroke="#34d399" stroke-width="1" opacity="0.5" />
+
+    <text x="-190" y="4.5" fill="#f8fafc" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif" letter-spacing="1.8">
+      RV UNIVERSITY • SCHOOL OF CSE • CS3301
+    </text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <text x="600" y="136" text-anchor="middle" class="hero-font" font-size="48" fill="url(#auroraTitle)" filter="url(#neonGlow)">
+    CAMPUS CONNECT
+  </text>
+
+  <!-- Tagline Pill / Monospace Subtitle -->
+  <g transform="translate(600, 175)">
+    <text x="0" y="0" text-anchor="middle" class="code-font" font-size="13" font-weight="600" fill="#94a3b8" letter-spacing="2.2">
+      // ENTERPRISE ACADEMIC WORKSPACE &amp; RESTful SERVICES ENGINE //
+    </text>
+  </g>
+
+  <!-- Lower Interactive Showcase Cards -->
+  <g transform="translate(600, 255)">
+    <!-- Card 1: REST API Backend -->
+    <g transform="translate(-370, 0)" filter="url(#cardShadow)">
+      <rect x="-160" y="-32" width="320" height="64" rx="12" fill="url(#glassCard)" stroke="url(#glassBorder)" stroke-width="1.2" />
+      <text x="-135" y="-8" fill="#38bdf8" font-size="16" font-weight="700" font-family="'Segoe UI', sans-serif">⚡ REST API Architecture</text>
+      <text x="-135" y="14" fill="#94a3b8" font-size="12" font-weight="500" font-family="'Segoe UI', sans-serif">Express 4 • Full CRUD • Middleware</text>
     </g>
-    <!-- Pill 2 -->
-    <g transform="translate(0, 0)">
-      <rect x="-90" y="-14" width="180" height="28" rx="14" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-      <text x="0" y="5" text-anchor="middle" fill="#86efac" font-size="12" font-family="'Segoe UI', sans-serif" font-weight="600">⚡ React 19 + Vite</text>
+
+    <!-- Card 2: Interactive Role Portals -->
+    <g transform="translate(0, 0)" filter="url(#cardShadow)">
+      <rect x="-160" y="-32" width="320" height="64" rx="12" fill="url(#glassCard)" stroke="url(#glassBorder)" stroke-width="1.2" />
+      <text x="-135" y="-8" fill="#34d399" font-size="16" font-weight="700" font-family="'Segoe UI', sans-serif">🧩 Dynamic Role Portals</text>
+      <text x="-135" y="14" fill="#94a3b8" font-size="12" font-weight="500" font-family="'Segoe UI', sans-serif">Student, Faculty &amp; Admin Workspaces</text>
     </g>
-    <!-- Pill 3 -->
-    <g transform="translate(250, 0)">
-      <rect x="-90" y="-14" width="180" height="28" rx="14" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-      <text x="0" y="5" text-anchor="middle" fill="#e2e8f0" font-size="12" font-family="'Segoe UI', sans-serif" font-weight="600">👩‍💻 Dhruvi Mittal</text>
+
+    <!-- Card 3: Modern Tech Stack -->
+    <g transform="translate(370, 0)" filter="url(#cardShadow)">
+      <rect x="-160" y="-32" width="320" height="64" rx="12" fill="url(#glassCard)" stroke="url(#glassBorder)" stroke-width="1.2" />
+      <text x="-135" y="-8" fill="#a78bfa" font-size="16" font-weight="700" font-family="'Segoe UI', sans-serif">👩‍💻 Dhruvi Mittal</text>
+      <text x="-135" y="14" fill="#94a3b8" font-size="12" font-weight="500" font-family="'Segoe UI', sans-serif">React 19 • Vite • Node.js Engine</text>
     </g>
   </g>
 </svg>

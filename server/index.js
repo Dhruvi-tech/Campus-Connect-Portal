@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 
 import assignmentRoutes from './routes/assignmentRoutes.js';
+import studentRoutes from './routes/studentRoutes.js';
 
 // 1. Initialize Express Application
 const app = express();
@@ -37,6 +38,7 @@ app.use((req, res, next) => {
 
 // Mount RESTful Resource Routes
 app.use('/api/assignments', assignmentRoutes);
+app.use('/api/students', studentRoutes);
 
 // Server Diagnostics Health Check Route
 app.get('/health', (req, res) => {
@@ -89,6 +91,9 @@ app.listen(PORT, () => {
   );
   console.log(
     `📡 Local Environment API Root: http://localhost:${PORT}/api/assignments`
+  );
+  console.log(
+    `📡 Students API Root:          http://localhost:${PORT}/api/students`
   );
   console.log(
     `=======================================================`

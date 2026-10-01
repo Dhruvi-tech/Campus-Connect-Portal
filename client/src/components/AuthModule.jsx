@@ -1,14 +1,9 @@
+// Campus Connect Portal - Authentication Module
+// Provides student login and registration interfaces
 import { useState } from 'react';
 
 export default function AuthModule({ initialMode = 'login' }) {
   const [isLogin, setIsLogin] = useState(initialMode === 'login');
-
-  // Synchronize parent prop state safely when route changes between /login and /register
-  const [prevMode, setPrevMode] = useState(initialMode);
-  if (initialMode !== prevMode) {
-    setPrevMode(initialMode);
-    setIsLogin(initialMode === 'login');
-  }
 
   const [formData, setFormData] = useState({
     name: '',
@@ -16,6 +11,7 @@ export default function AuthModule({ initialMode = 'login' }) {
     password: ''
   });
 
+  // Handle form field value changes
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -23,18 +19,20 @@ export default function AuthModule({ initialMode = 'login' }) {
     });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (isLogin) {
-      alert(`Logging in with: ${formData.email}`);
+      alert('Student Login Submitted');
     } else {
-      alert(`RVU Student Registered: ${formData.name}\n(${formData.email})`);
+      alert('Student Registration Submitted');
     }
   };
 
   return (
     <div style={styles.cardContainer}>
+
       <div style={styles.header}>
         <h1 style={styles.title}>RV UNIVERSITY</h1>
         <p style={styles.subtitle}>Excellence in Education</p>
@@ -45,29 +43,32 @@ export default function AuthModule({ initialMode = 'login' }) {
       </h2>
 
       <div style={styles.tabContainer}>
+
         <button
-          type="button"
           style={isLogin ? styles.activeTab : styles.inactiveTab}
           onClick={() => setIsLogin(true)}
+          type="button"
         >
           Login
         </button>
 
         <button
-          type="button"
           style={!isLogin ? styles.activeTab : styles.inactiveTab}
           onClick={() => setIsLogin(false)}
+          type="button"
         >
           Register
         </button>
+
       </div>
 
       <form onSubmit={handleSubmit} style={styles.form}>
+
         {!isLogin && (
           <input
             type="text"
             name="name"
-            placeholder="Full Name"
+            placeholder="Full Name (e.g. Dhruvi Mittal)"
             value={formData.name}
             onChange={handleChange}
             style={styles.input}
@@ -95,25 +96,33 @@ export default function AuthModule({ initialMode = 'login' }) {
           required
         />
 
-        <button type="submit" style={styles.submitBtn}>
+        <button
+          type="submit"
+          style={styles.submitBtn}
+        >
           {isLogin ? 'Sign In to Portal' : 'Create Student Account'}
         </button>
+
       </form>
+
     </div>
   );
 }
 
+
 const styles = {
-  cardContainer: {
-    maxWidth: '400px',
-    margin: '30px auto',
-    padding: '30px',
-    borderRadius: '8px',
-    boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-    backgroundColor: '#ffffff',
-    textAlign: 'center',
-    fontFamily: 'Arial, sans-serif'
-  },
+
+cardContainer: {
+  width: '320px',
+  maxWidth: '90%',
+  margin: '30px auto',
+  padding: '20px',
+  borderRadius: '6px',
+  boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+  backgroundColor: '#ffffff',
+  textAlign: 'center',
+  fontFamily: 'Arial, sans-serif'
+},
 
   header: {
     backgroundColor: '#0A2240',
@@ -193,4 +202,5 @@ const styles = {
     fontSize: '15px',
     cursor: 'pointer'
   }
-};
+
+}; 

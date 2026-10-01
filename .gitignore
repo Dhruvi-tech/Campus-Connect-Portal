@@ -4,6 +4,7 @@ client/take_screenshots.js
 client/capture_algorithm_steps.js
 client/capture_distinct_real_screenshots.js
 client/build_lab_doc.py
+scratch/
 *.docx
 
 # Environment variables & secrets
@@ -15,7 +16,6 @@ client/build_lab_doc.py
 node_modules/
 dist/
 dist-ssr/
-build/
 *.local
 
 # Logs

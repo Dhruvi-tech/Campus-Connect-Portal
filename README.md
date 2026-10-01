@@ -1,201 +1,176 @@
 <div align="center">
 
-<!-- Local SVG Animated Banner (100% Uptime & Reliable) -->
+<!-- Local SVG Animated Institutional Showcase Banner -->
 <img src="./assets/banner.svg" alt="Campus Connect Portal Banner" width="100%" />
 
-<br/>
-
-<!-- Animated Typing Subtitle -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=107C41&center=true&vCenter=true&width=550&lines=Seamless+Campus+Life+%26+Resource+Hub;Empowering+Students%2C+Faculty+%26+Admins;Real-Time+Academic+Management;Crafted+with+React+19+%26+Vite" alt="Typing SVG" />
-</a>
-
-<br/><br/>
-
-<!-- Metadata Badges -->
-[![Course](https://img.shields.io/badge/Course-CS3301%20Full%20Stack%20Development-0A2240?style=for-the-badge&logo=bookstack&logoColor=white)](https://github.com/Dhruvi-tech/Campus-Connect-Portal)
-[![Author](https://img.shields.io/badge/Author-Dhruvi%20Mittal-0d5c3a?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Dhruvi-tech)
-[![Institution](https://img.shields.io/badge/Institution-RV%20University-a61c1c?style=for-the-badge&logo=google-classroom&logoColor=white)](https://rvu.edu.in)
-[![Status](https://img.shields.io/badge/Status-Active%20%E2%9C%94-107c41?style=for-the-badge)](https://github.com/Dhruvi-tech/Campus-Connect-Portal)
-
-<br/>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=16&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=550&height=32&lines=Modern+Full-Stack+Campus+Operating+System;Next-Gen+Role-Adaptive+Academic+Workspaces;High-Throughput+RESTful+Express+API+Pipeline" height="32" alt="Typing SVG" />
+</p>
 
 <p align="center">
-  <a href="#-about-the-project">About</a> •
-  <a href="#-key-features">Features</a> •
-  <a href="#-portal-roles--views">Portal Views</a> •
-  <a href="#-tech-stack--tools">Tech Stack</a> •
-  <a href="#-project-architecture">Architecture</a> •
-  <a href="#-quick-start-guide">Quick Start</a> •
-  <a href="#-author">Author</a>
+  <a href="https://github.com/Dhruvi-tech/Campus-Connect-Portal"><img src="https://img.shields.io/badge/Course-CS3301%20Full%20Stack-07182f?style=flat-square&logo=bookstack&logoColor=86efac" alt="Course" /></a>
+  <a href="https://github.com/Dhruvi-tech"><img src="https://img.shields.io/badge/Architect-Dhruvi%20Mittal-0d5c3a?style=flat-square&logo=github&logoColor=white" alt="Architect" /></a>
+  <a href="https://rvu.edu.in"><img src="https://img.shields.io/badge/Institution-RV%20University-a61c1c?style=flat-square&logo=google-classroom&logoColor=white" alt="Institution" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.2-06B6D4?style=flat-square&logo=react&logoColor=white" alt="React" /></a>
+  <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/Express-4.21-10B981?style=flat-square&logo=express&logoColor=white" alt="Express" /></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-24.x-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node" /></a>
+</p>
+
+<!-- Navigation Bar -->
+<p align="center">
+  <a href="#-live-portal-showcase"><b>Showcase</b></a> &nbsp;•&nbsp;
+  <a href="#-role-workspaces--visual-walkthrough"><b>Workspaces</b></a> &nbsp;•&nbsp;
+  <a href="#-system-architecture"><b>Architecture</b></a> &nbsp;•&nbsp;
+  <a href="#-rest-api-endpoints"><b>REST API</b></a> &nbsp;•&nbsp;
+  <a href="#-quickstart"><b>Quickstart</b></a> &nbsp;•&nbsp;
+  <a href="#-author"><b>Author</b></a>
 </p>
 
 </div>
 
 ---
 
-### 🌐 About the Project
+### 🌟 Live Portal Showcase
 
-**Campus Connect Portal** is an intuitive, all-in-one digital gateway engineered for the **RV University School of Computer Science & Engineering**. It consolidates daily campus communication, academic resource access, real-time university highlights, and role-based workflows into a unified, high-performance web application.
-
-Designed with clean typography, responsive layout, and modern interactive modules, Campus Connect ensures students, professors, and administrative personnel can seamlessly access services tailored to their daily campus needs.
+<div align="center">
+  <img src="./assets/showcase/hero_carousel.png" alt="Campus Connect Hero & Carousel" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
+  <p><i>Institutional Landing View • Interactive Campus Carousel Slider • Role Jump Navigation</i></p>
+</div>
 
 ---
 
-### ✨ Key Features
+### 📸 Role Workspaces & Visual Walkthrough
+
+#### 1. Role Selection Grid & Authentication Suite
 
 <table>
   <tr>
-    <td width="50%">
-      <h4>🏛️ Institutional Branding & Navbar</h4>
-      <ul>
-        <li>Distinctive RV University brand badge and department identification</li>
-        <li>Quick-jump anchors to Login and Student Registration</li>
-        <li>Mobile-responsive layout with seamless viewport adaptation</li>
-      </ul>
+    <td width="50%" align="center">
+      <b>🎭 Modular Role Selection</b><br/><br/>
+      <img src="./assets/showcase/role_portals.png" alt="Role Selection Grid" width="100%" style="border-radius: 8px;" /><br/>
+      <sub>Interactive role selection for Student, Faculty & Admin personas</sub>
     </td>
-    <td width="50%">
-      <h4>🌟 Hero Showcase Banner</h4>
-      <ul>
-        <li>Course identifier badge (<code>CS3301 - Full Stack Development</code>)</li>
-        <li>High-contrast campus visual backdrop with smooth text overlay</li>
-        <li>Interactive call-to-action to explore role-specific views</li>
-      </ul>
+    <td width="50%" align="center">
+      <b>🔐 Student Auth & Registration</b><br/><br/>
+      <img src="./assets/showcase/auth_module.png" alt="Auth Module" width="100%" style="border-radius: 8px;" /><br/>
+      <sub>Instant dual toggle between Student Login & New Registration</sub>
     </td>
   </tr>
+</table>
+
+#### 2. Student Portal: Notices & Interactive Modal Dialogs
+
+<table>
   <tr>
-    <td width="50%">
-      <h4>🎞️ Interactive Carousel Slider</h4>
-      <ul>
-        <li>Showcases campus facilities, learning spaces, and academic tools</li>
-        <li>Next & Previous tactile navigation buttons</li>
-        <li>Dynamic indicator pills highlighting the active slide</li>
-      </ul>
+    <td width="50%" align="center">
+      <b>📢 Campus Circulars & Notice Board</b><br/><br/>
+      <img src="./assets/showcase/student_notices.png" alt="Student Notices" width="100%" style="border-radius: 8px;" /><br/>
+      <sub>Real-time university announcements with category tags</sub>
     </td>
-    <td width="50%">
-      <h4>🔐 React Authentication Module</h4>
-      <ul>
-        <li>Instant toggle between <b>Student Login</b> and <b>Registration</b></li>
-        <li>Reactive form inputs with client-side state handling</li>
-        <li>Structured for seamless API integration with backend services</li>
-      </ul>
+    <td width="50%" align="center">
+      <b>🔍 Circular Detail Modal</b><br/><br/>
+      <img src="./assets/showcase/notice_modal.png" alt="Notice Modal Dialog" width="100%" style="border-radius: 8px;" /><br/>
+      <sub>Popup dialog displaying detailed bulletin guidelines</sub>
     </td>
   </tr>
+</table>
+
+#### 3. Academic Management: Assignments & Live Attendance
+
+<table>
   <tr>
-    <td colspan="2">
-      <h4>🧩 Interactive Component-Based Role Portal System</h4>
-      <ul>
-        <li><b>Dynamic Role Cards:</b> Reusable <code>RoleCard</code> components parameterized with props for Student, Faculty, and Admin roles.</li>
-        <li><b>Interactive Portal View:</b> Responsive container with dark slate <code>PortalHeader</code>, amber <code>← Back to Main Campus View</code> button, and dynamic <code>TabBar</code>.</li>
-        <li><b>State-Driven Tab Content:</b>
-          <ul>
-            <li><b>Notices & Events:</b> Displays real-time circulars with interactive <code>[View Details]</code> modal dialogs (<code>DetailModal</code>).</li>
-            <li><b>Course Assignments:</b> Interactive submission workflow updating status from Pending to Submitted dynamically.</li>
-            <li><b>Attendance Tracker:</b> Live attendance percentage computation with <code>+ Check In</code> simulator and progress bars.</li>
-            <li><b>Student Profile:</b> Comprehensive academic metrics and editable status bio.</li>
-          </ul>
-        </li>
-      </ul>
+    <td width="50%" align="center">
+      <b>📝 Interactive Assignment Workflow</b><br/><br/>
+      <img src="./assets/showcase/assignments_tracker.png" alt="Assignments Tracker" width="100%" style="border-radius: 8px;" /><br/>
+      <sub>Dynamic task submission cycle with real-time UI state sync</sub>
+    </td>
+    <td width="50%" align="center">
+      <b>📊 Real-Time Attendance Tracker</b><br/><br/>
+      <img src="./assets/showcase/attendance_tracker.png" alt="Attendance Tracker" width="100%" style="border-radius: 8px;" /><br/>
+      <sub>Live percentage calculator with interactive <code>+ Check In</code> simulator</sub>
+    </td>
+  </tr>
+</table>
+
+#### 4. Faculty & Administration Command Centers
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <b>👨‍🏫 Faculty Departmental Portal</b><br/><br/>
+      <img src="./assets/showcase/faculty_portal.png" alt="Faculty Portal" width="100%" style="border-radius: 8px;" /><br/>
+      <sub>Lecture notes, classroom attendance logging & student marks entry</sub>
+    </td>
+    <td width="50%" align="center">
+      <b>🛡️ Admin Central Control Portal</b><br/><br/>
+      <img src="./assets/showcase/admin_portal.png" alt="Admin Portal" width="100%" style="border-radius: 8px;" /><br/>
+      <sub>Student registry oversight, broadcast circulars & system health monitoring</sub>
     </td>
   </tr>
 </table>
 
 ---
 
-### 👥 Portal Roles & Views
+### 🏛️ System Architecture
 
-<div align="center">
+```mermaid
+flowchart TD
+    subgraph Client["🖥️ React 19 Frontend Client (Port 5173)"]
+        UI["Campus View & Hero Banner"]
+        Portals["Role Workspaces (Student / Faculty / Admin)"]
+        Trackers["Attendance & Assignment Trackers"]
+    end
 
-| Role | Target Audience | Key Capabilities |
-| :--- | :--- | :--- |
-| **👨‍🎓 Student Portal** | Enrolled Undergraduates & Postgraduates | • Browse enrolled course materials<br/>• Track attendance & exam timetables<br/>• View real-time semester grades & notices |
-| **👨‍🏫 Faculty Portal** | Teaching & Research Faculty | • Upload syllabus and lecture notes<br/>• Record & review classroom attendance<br/>• Publish academic marks & student feedback |
-| **🛡️ Admin Portal** | University Administration | • Manage student & faculty registry<br/>• Broadcast university-wide circulars<br/>• System oversight & analytical reports |
+    subgraph Server["⚡ Express 4 RESTful Backend (Port 5000)"]
+        Middleware["🛡️ CORS • JSON Parser • ISO Telemetry Logger"]
+        HealthAPI["🩺 GET /health"]
+        StudentAPI["🧑‍🎓 /api/students (CRUD)"]
+        AssignAPI["📑 /api/assignments (CRUD)"]
+        Store[("💾 In-Memory Transient State Store")]
+    end
 
-</div>
+    UI --> Portals --> Trackers
+    Client -->|HTTP / JSON Requests| Middleware
+    Middleware --> HealthAPI & StudentAPI & AssignAPI
+    StudentAPI & AssignAPI <--> Store
+    HealthAPI & StudentAPI & AssignAPI -.->|JSON Envelopes| Client
 
----
-
-### 🛠️ Tech Stack & Tools
-
-<div align="center">
-
-| Frontend | Styling & Assets | Backend & Tools |
-| :---: | :---: | :---: |
-| ![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) |
-| ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | ![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white) |
-| ![JavaScript](https://img.shields.io/badge/ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | ![Responsive](https://img.shields.io/badge/Mobile_Ready-107c41?style=for-the-badge&logo=google-chrome&logoColor=white) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
-
-</div>
-
----
-
-### 📁 Project Architecture
-
-```plaintext
-campus-connect-portal/
-├── assets/                          # Repository documentation visuals & SVGs
-│   ├── banner.svg                   # Custom vector animated hero banner
-│   └── footer.svg                   # Flowing wave footer divider
-├── client/                          # Frontend Application (Vite + React)
-│   ├── index.html                   # Primary HTML document & role showcase
-│   ├── package.json                 # Frontend dependencies and scripts
-│   ├── vite.config.js               # Vite bundler configuration
-│   └── src/
-│       ├── main.jsx                 # React root bootstrap
-│       ├── App.jsx                  # Top-level layout & active role state container
-│       ├── carousel.js              # Interactive carousel controller logic
-│       ├── style.css                # Global stylesheet & design tokens
-│       ├── portal.css               # Modular portal styling & modals
-│       ├── assets/                  # Campus imagery & visual media
-│       └── components/
-│           ├── AuthModule.jsx       # Student login & registration component
-│           ├── RoleCard.jsx         # Reusable role card component (props-based)
-│           ├── PortalView.jsx       # Parent portal container with state & tabs
-│           ├── PortalHeader.jsx     # Portal slate header with back navigation
-│           ├── TabBar.jsx           # Reusable tab navigation bar component
-│           ├── ItemCard.jsx         # Reusable item & notice card row component
-│           └── DetailModal.jsx      # Modal popup dialog for item circular details
-├── server/                          # Backend API Architecture
-│   ├── package.json                 # Server dependencies & scripts
-│   └── src/
-│       ├── app.js                   # Application initialization
-│       ├── config/                  # Database & environment setups
-│       ├── controllers/             # Business logic controllers
-│       ├── middleware/              # Auth & error middlewares
-│       └── models/                  # Database schemas
-├── package.json                     # Root configuration
-└── README.md                        # Project documentation & overview
+    style Client fill:#07182f,stroke:#06b6d4,stroke-width:2px,color:#fff
+    style Server fill:#0a2240,stroke:#10b981,stroke-width:2px,color:#fff
 ```
 
 ---
 
-### 🚀 Quick Start Guide
+### 🔌 REST API Endpoints
 
-#### Prerequisites
-Ensure you have [Node.js](https://nodejs.org/) (v18 or higher) and `npm` installed.
+The Express server listens on `http://localhost:5000` with standard JSON envelopes:
 
-#### Step 1: Clone the Repository
+| Method | Endpoint | Status | Purpose | Sample Body |
+|:---:|:---|:---:|:---|:---|
+| `GET` | `/api/students` | `200 OK` | Fetch all enrolled students | *None* |
+| `GET` | `/api/students/:id` | `200` / `404` | Retrieve student by ID | *None* |
+| `POST` | `/api/students` | `201` / `400` | Register new student | `{"name","email","course"}` |
+| `PUT` | `/api/students/:id` | `200` / `404` | Update student profile | `{"name"?, "course"?}` |
+| `DELETE` | `/api/students/:id` | `200` / `404` | Remove student from registry | *None* |
+| `GET` | `/api/assignments` | `200 OK` | Fetch all course assignments | *None* |
+| `GET` | `/health` | `200 OK` | Server health & uptime telemetry | *None* |
+
+---
+
+### 🚀 Quickstart
+
 ```bash
+# 1. Clone & Enter Project
 git clone https://github.com/Dhruvi-tech/Campus-Connect-Portal.git
 cd Campus-Connect-Portal
-```
 
-#### Step 2: Install Dependencies
-```bash
+# 2. Launch Backend (Terminal 1)
+cd server
+npm install && npm run dev     # 📡 Listens on http://localhost:5000
+
+# 3. Launch Frontend (Terminal 2)
 cd client
-npm install
-```
-
-#### Step 3: Run the Development Server
-```bash
-npm run dev
-```
-
-#### Step 4: Access the Portal
-Open your browser and navigate to:
-```
-http://localhost:5173
+npm install && npm run dev     # 🚀 Opens on http://localhost:5173
 ```
 
 ---
@@ -204,7 +179,7 @@ http://localhost:5173
 
 <div align="center">
 
-<img src="https://github.com/Dhruvi-tech.png" width="90" style="border-radius: 50%;" alt="Dhruvi Mittal Avatar" />
+<img src="https://github.com/Dhruvi-tech.png" width="90" style="border-radius: 50%; border: 3px solid #107c41; box-shadow: 0 4px 14px rgba(0,0,0,0.3);" alt="Dhruvi Mittal Avatar" />
 
 ### **Dhruvi Mittal**
 **RV University** — School of Computer Science & Engineering  
@@ -218,6 +193,6 @@ http://localhost:5173
 <!-- Local SVG Wave Footer -->
 <img src="./assets/footer.svg" alt="Footer Wave Divider" width="100%" />
 
-<sub>&copy; 2026 RV University • Campus Connect Portal • Designed & Developed by Dhruvi Mittal</sub>
+<sub>&copy; 2026 RV University • Campus Connect Portal • Engineered by Dhruvi Mittal</sub>
 
 </div>
