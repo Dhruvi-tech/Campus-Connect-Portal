@@ -1,11 +1,21 @@
-# Screenshots (Saved locally for lab records, not pushed to remote)
-screenshots/
+# Screenshots (Temporary local files)
+/screenshots/
+Experiment7_Screenshots/
 client/take_screenshots.js
 client/capture_algorithm_steps.js
 client/capture_distinct_real_screenshots.js
+client/capture_exp7_live.js
+client/capture_exp7_realistic.js
+client/capture_docs_screenshots.js
+client/generate_missing_screenshots.js
 client/build_lab_doc.py
 scratch/
 *.docx
+
+# Explicitly track documentation assets
+!docs/
+!docs/screenshots/
+!docs/screenshots/**
 
 # Environment variables & secrets
 .env

@@ -43,6 +43,7 @@ function App() {
             icon="👨‍🎓"
             features={[
               'View Notices & Events',
+              'Student Database (MongoDB)',
               'Submit Assignments',
               'Track Attendance',
               'Update Profile'

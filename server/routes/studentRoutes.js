@@ -1,202 +1,278 @@
 import express from 'express';
+import mongoose from 'mongoose';
+import Student from '../models/Student.js';
 
 const router = express.Router();
 
 // ===================================================================
-// IN-MEMORY TEMPORARY DATA STORAGE (Experiment 6)
-// ===================================================================
-// Mock in-memory students array - no external database used
-let students = [
-  {
-    id: 1,
-    name: 'Rahul Sharma',
-    email: 'rahul@example.com',
-    course: 'Cloud Computing'
-  },
-  {
-    id: 2,
-    name: 'Ananya Patel',
-    email: 'ananya@example.com',
-    course: 'Full Stack Development'
-  }
-];
-
-// Counter for auto-generating unique numeric IDs
-let nextStudentId = 3;
-
-// ===================================================================
 // 1. READ ALL STUDENTS (GET /api/students)
 // ===================================================================
-router.get('/', (req, res) => {
-  res.status(200).json({
-    success: true,
-    count: students.length,
-    data: students
-  });
+router.get('/', async (req, res, next) => {
+  try {
+    const students = await Student.find().sort({ createdAt: -1 });
+    return res.status(200).json({
+      success: true,
+      count: students.length,
+      data: students
+    });
+  } catch (error) {
+    next(error);
+  }
 });
 
 // ===================================================================
 // 2. READ ONE STUDENT BY ID (GET /api/students/:id)
 // ===================================================================
-router.get('/:id', (req, res) => {
-  const studentId = parseInt(req.params.id, 10);
+router.get('/:id', async (req, res, next) => {
+  try {
+    const { id } = req.params;
 
-  if (isNaN(studentId)) {
-    return res.status(400).json({
-      success: false,
-      message: 'Invalid student ID. ID must be a number'
+    // Validate MongoDB ObjectId format
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid student ID format'
+      });
+    }
+
+    const student = await Student.findById(id);
+
+    if (!student) {
+      return res.status(404).json({
+        success: false,
+        message: 'Student not found'
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      data: student
     });
+  } catch (error) {
+    next(error);
   }
-
-  const student = students.find((s) => s.id === studentId);
-
-  if (!student) {
-    return res.status(404).json({
-      success: false,
-      message: 'Student not found'
-    });
-  }
-
-  res.status(200).json({
-    success: true,
-    data: student
-  });
 });
 
 // ===================================================================
 // 3. CREATE NEW STUDENT (POST /api/students)
 // ===================================================================
-router.post('/', (req, res) => {
-  const { name, email, course } = req.body;
+router.post('/', async (req, res, next) => {
+  try {
+    const { name, usn, department, marks } = req.body;
 
-  // Validation: ensure name, email, and course are provided and non-empty
-  if (
-    !name ||
-    !email ||
-    !course ||
-    !String(name).trim() ||
-    !String(email).trim() ||
-    !String(course).trim()
-  ) {
-    return res.status(400).json({
-      success: false,
-      message: "Validation Error: 'name', 'email', and 'course' are required fields"
+    // Validation 1: Required fields presence
+    if (
+      !name ||
+      !usn ||
+      !department ||
+      marks === undefined ||
+      marks === null ||
+      marks === ''
+    ) {
+      return res.status(400).json({
+        success: false,
+        message: 'Validation Error: name, usn, department, and marks are all required'
+      });
+    }
+
+    // Validation 2: Marks range (0 to 100)
+    const numericMarks = Number(marks);
+    if (isNaN(numericMarks) || numericMarks < 0 || numericMarks > 100) {
+      return res.status(400).json({
+        success: false,
+        message: 'Validation Error: marks must be a number between 0 and 100'
+      });
+    }
+
+    const formattedUSN = String(usn).trim().toUpperCase();
+
+    // Validation 3: Check duplicate USN
+    const existingStudent = await Student.findOne({ usn: formattedUSN });
+    if (existingStudent) {
+      return res.status(400).json({
+        success: false,
+        message: `Duplicate USN Error: A student with USN "${formattedUSN}" already exists`
+      });
+    }
+
+    const newStudent = await Student.create({
+      name: String(name).trim(),
+      usn: formattedUSN,
+      department: String(department).trim(),
+      marks: numericMarks
     });
+
+    return res.status(201).json({
+      success: true,
+      message: 'Student created successfully',
+      data: newStudent
+    });
+  } catch (error) {
+    if (error.code === 11000) {
+      return res.status(400).json({
+        success: false,
+        message: 'Duplicate USN Error: A student with this USN already exists'
+      });
+    }
+    if (error.name === 'ValidationError') {
+      return res.status(400).json({
+        success: false,
+        message: error.message
+      });
+    }
+    next(error);
   }
-
-  const newStudent = {
-    id: nextStudentId++,
-    name: String(name).trim(),
-    email: String(email).trim(),
-    course: String(course).trim()
-  };
-
-  students.push(newStudent);
-
-  res.status(201).json({
-    success: true,
-    message: 'Student created successfully',
-    data: newStudent
-  });
 });
 
 // ===================================================================
 // 4. UPDATE STUDENT (PUT /api/students/:id)
 // ===================================================================
-router.put('/:id', (req, res) => {
-  const studentId = parseInt(req.params.id, 10);
+router.put('/:id', async (req, res, next) => {
+  try {
+    const { id } = req.params;
 
-  if (isNaN(studentId)) {
-    return res.status(400).json({
-      success: false,
-      message: 'Invalid student ID. ID must be a number'
-    });
-  }
-
-  const student = students.find((s) => s.id === studentId);
-
-  if (!student) {
-    return res.status(404).json({
-      success: false,
-      message: 'Student not found'
-    });
-  }
-
-  const { name, email, course } = req.body;
-
-  if (name === undefined && email === undefined && course === undefined) {
-    return res.status(400).json({
-      success: false,
-      message: 'Validation Error: Please provide at least one field to update (name, email, or course)'
-    });
-  }
-
-  if (name !== undefined) {
-    if (!String(name).trim()) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
       return res.status(400).json({
         success: false,
-        message: "Validation Error: 'name' cannot be empty"
+        message: 'Invalid student ID format'
       });
     }
-    student.name = String(name).trim();
-  }
 
-  if (email !== undefined) {
-    if (!String(email).trim()) {
+    const { name, usn, department, marks } = req.body;
+
+    if (
+      name === undefined &&
+      usn === undefined &&
+      department === undefined &&
+      marks === undefined
+    ) {
       return res.status(400).json({
         success: false,
-        message: "Validation Error: 'email' cannot be empty"
+        message: 'Validation Error: Please provide at least one field to update'
       });
     }
-    student.email = String(email).trim();
-  }
 
-  if (course !== undefined) {
-    if (!String(course).trim()) {
+    const updateFields = {};
+
+    if (name !== undefined) {
+      if (!String(name).trim()) {
+        return res.status(400).json({
+          success: false,
+          message: "Validation Error: 'name' cannot be empty"
+        });
+      }
+      updateFields.name = String(name).trim();
+    }
+
+    if (department !== undefined) {
+      if (!String(department).trim()) {
+        return res.status(400).json({
+          success: false,
+          message: "Validation Error: 'department' cannot be empty"
+        });
+      }
+      updateFields.department = String(department).trim();
+    }
+
+    if (marks !== undefined) {
+      const numericMarks = Number(marks);
+      if (isNaN(numericMarks) || numericMarks < 0 || numericMarks > 100) {
+        return res.status(400).json({
+          success: false,
+          message: 'Validation Error: marks must be a number between 0 and 100'
+        });
+      }
+      updateFields.marks = numericMarks;
+    }
+
+    if (usn !== undefined) {
+      const formattedUSN = String(usn).trim().toUpperCase();
+      if (!formattedUSN) {
+        return res.status(400).json({
+          success: false,
+          message: "Validation Error: 'usn' cannot be empty"
+        });
+      }
+
+      const duplicateCheck = await Student.findOne({
+        usn: formattedUSN,
+        _id: { $ne: id }
+      });
+      if (duplicateCheck) {
+        return res.status(400).json({
+          success: false,
+          message: `Duplicate USN Error: A student with USN "${formattedUSN}" already exists`
+        });
+      }
+      updateFields.usn = formattedUSN;
+    }
+
+    const updatedStudent = await Student.findByIdAndUpdate(
+      id,
+      updateFields,
+      { new: true, runValidators: true }
+    );
+
+    if (!updatedStudent) {
+      return res.status(404).json({
+        success: false,
+        message: 'Student not found'
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: 'Student updated successfully',
+      data: updatedStudent
+    });
+  } catch (error) {
+    if (error.code === 11000) {
       return res.status(400).json({
         success: false,
-        message: "Validation Error: 'course' cannot be empty"
+        message: 'Duplicate USN Error: A student with this USN already exists'
       });
     }
-    student.course = String(course).trim();
+    if (error.name === 'ValidationError') {
+      return res.status(400).json({
+        success: false,
+        message: error.message
+      });
+    }
+    next(error);
   }
-
-  res.status(200).json({
-    success: true,
-    message: 'Student updated successfully',
-    data: student
-  });
 });
 
 // ===================================================================
 // 5. DELETE STUDENT (DELETE /api/students/:id)
 // ===================================================================
-router.delete('/:id', (req, res) => {
-  const studentId = parseInt(req.params.id, 10);
+router.delete('/:id', async (req, res, next) => {
+  try {
+    const { id } = req.params;
 
-  if (isNaN(studentId)) {
-    return res.status(400).json({
-      success: false,
-      message: 'Invalid student ID. ID must be a number'
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid student ID format'
+      });
+    }
+
+    const deletedStudent = await Student.findByIdAndDelete(id);
+
+    if (!deletedStudent) {
+      return res.status(404).json({
+        success: false,
+        message: 'Student not found'
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: 'Student deleted successfully',
+      data: deletedStudent
     });
+  } catch (error) {
+    next(error);
   }
-
-  const studentIndex = students.findIndex((s) => s.id === studentId);
-
-  if (studentIndex === -1) {
-    return res.status(404).json({
-      success: false,
-      message: 'Student not found'
-    });
-  }
-
-  const [deletedStudent] = students.splice(studentIndex, 1);
-
-  res.status(200).json({
-    success: true,
-    message: 'Student deleted successfully',
-    data: deletedStudent
-  });
 });
 
 export default router;

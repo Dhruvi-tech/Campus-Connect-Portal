@@ -1,11 +1,12 @@
-// Campus Connect Portal - PortalView Parent Component (Experiment 5)
-// Demonstrates Component-Based Architecture, Props composition, State management, and Event handling
+// Campus Connect Portal - PortalView Parent Component (Experiment 5 & 7)
+// Demonstrates Component-Based Architecture, Props composition, State management, and Full Stack MongoDB CRUD
 
 import { useState } from 'react';
 import PortalHeader from './PortalHeader.jsx';
 import TabBar from './TabBar.jsx';
 import ItemCard from './ItemCard.jsx';
 import DetailModal from './DetailModal.jsx';
+import StudentManager from './StudentManager.jsx';
 
 export default function PortalView({ role = 'student', onBack }) {
   // 1. Tab State: manages active view tab
@@ -125,12 +126,14 @@ export default function PortalView({ role = 'student', onBack }) {
       case 'faculty':
         return [
           { id: 'notices', label: 'Post Notices & Events' },
+          { id: 'students', label: 'Student Grading (MongoDB)' },
           { id: 'assignments', label: 'Create Assignments' },
           { id: 'attendance', label: 'Mark Attendance' },
           { id: 'submissions', label: 'View Submissions' }
         ];
       case 'admin':
         return [
+          { id: 'students', label: 'Student Management (MongoDB)' },
           { id: 'users', label: 'Manage Users' },
           { id: 'notices', label: 'Manage Notices & Events' },
           { id: 'reports', label: 'View System Reports' },
@@ -140,6 +143,7 @@ export default function PortalView({ role = 'student', onBack }) {
       default:
         return [
           { id: 'notices', label: 'Notices & Events' },
+          { id: 'students', label: 'Student Management' },
           { id: 'assignments', label: 'Assignments' },
           { id: 'attendance', label: 'Track Attendance' },
           { id: 'profile', label: 'Profile' }
@@ -211,6 +215,11 @@ export default function PortalView({ role = 'student', onBack }) {
               ))}
             </div>
           </div>
+        )}
+
+        {/* STUDENT MANAGEMENT / MONGODB CRUD TAB */}
+        {activeTab === 'students' && (
+          <StudentManager />
         )}
 
         {/* STUDENT - ASSIGNMENTS TAB */}
@@ -337,8 +346,8 @@ export default function PortalView({ role = 'student', onBack }) {
           </div>
         )}
 
-        {/* FACULTY OR ADMIN GENERAL TAB CONTENT */}
-        {role !== 'student' && activeTab !== 'notices' && (
+        {/* FACULTY OR ADMIN GENERAL TAB CONTENT (when not students or notices) */}
+        {role !== 'student' && activeTab !== 'notices' && activeTab !== 'students' && (
           <div>
             <h3 className="portal-section-heading">
               ⚙️ {tabs.find((t) => t.id === activeTab)?.label || 'Module Overview'}

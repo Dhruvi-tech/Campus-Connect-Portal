@@ -1,6 +1,10 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import cors from 'cors';
 
+import connectDB from './src/config/db.js';
 import assignmentRoutes from './routes/assignmentRoutes.js';
 import studentRoutes from './routes/studentRoutes.js';
 
@@ -80,24 +84,36 @@ app.use((err, req, res, next) => {
 });
 
 // ===================================================================
-// 5. HTTP SERVER INITIALIZATION
+// 5. DATABASE CONNECTION & HTTP SERVER INITIALIZATION
 // ===================================================================
-app.listen(PORT, () => {
-  console.log(
-    `=======================================================`
-  );
-  console.log(
-    `🚀 Node.js Express Server actively listening on Port: ${PORT}`
-  );
-  console.log(
-    `📡 Local Environment API Root: http://localhost:${PORT}/api/assignments`
-  );
-  console.log(
-    `📡 Students API Root:          http://localhost:${PORT}/api/students`
-  );
-  console.log(
-    `=======================================================`
-  );
-});
+const startServer = async () => {
+  try {
+    // Connect to MongoDB before accepting incoming requests
+    await connectDB();
+
+    app.listen(PORT, () => {
+      console.log(
+        `=======================================================`
+      );
+      console.log(
+        `🚀 Node.js Express Server actively listening on Port: ${PORT}`
+      );
+      console.log(
+        `📡 Local Environment API Root: http://localhost:${PORT}/api/assignments`
+      );
+      console.log(
+        `📡 Students API Root:          http://localhost:${PORT}/api/students`
+      );
+      console.log(
+        `=======================================================`
+      );
+    });
+  } catch (error) {
+    console.error('Failed to initialize server with database connection:', error);
+    process.exit(1);
+  }
+};
+
+startServer();
 
 export default app;
