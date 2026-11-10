@@ -64,11 +64,10 @@
 |:-:|:--|:-:|:--|
 | 1 | [🌟 Project Overview](#-project-overview) | 8 | [🍃 MongoDB Configuration](#-mongodb-configuration) |
 | 2 | [🎯 Objectives](#-objectives) | 9 | [🔌 API Documentation](#-api-documentation) |
-| 3 | [✨ Key Features](#-key-features) | 10 | [⚙️ CRUD Implementation](#%EF%B8%8F-crud-implementation) |
-| 4 | [🛠️ Tech Stack](#%EF%B8%8F-tech-stack) | 11 | [📸 Screenshots & Demo](#-screenshots--demonstration) |
-| 5 | [🏛️ System Architecture](#%EF%B8%8F-system-architecture) | 12 | [🧪 Testing](#-testing--verification) |
-| 6 | [📂 Folder Structure](#-project-folder-structure) | 13 | [🔮 Future Enhancements](#-future-enhancements) |
-| 7 | [🚀 Quickstart](#-quickstart) | 14 | [👤 Author](#-author) |
+| 3 | [🛠️ Tech Stack](#%EF%B8%8F-tech-stack) | 11 | [📸 Screenshots & Demo](#-screenshots--demonstration) |
+| 4 | [🏛️ System Architecture](#%EF%B8%8F-system-architecture) | 12 | [🧪 Testing](#-testing--verification) |
+| 5 | [📂 Folder Structure](#-project-folder-structure) | 13 | [🔮 Future Enhancements](#-future-enhancements) |
+| 6 | [🚀 Quickstart](#-quickstart) | 14 | [👤 Author](#-author) |
 
 </details>
 
@@ -744,25 +743,6 @@ All responses follow a standardized JSON envelope.
 | 🖥️ **Frontend Integration** | Add / edit / delete via real DOM events in Edge and Chrome using Puppeteer; page-refresh persistence confirmed with zero state loss |
 | 🔌 **REST API** | All CRUD endpoints via Postman and Axios; edge cases: duplicate USNs, non-existent ObjectIds (`404`), marks `> 100`, empty required fields |
 | 🍃 **Database Integrity** | Direct BSON document creation and index adherence checked in `mongosh` |
-
-
----
-
-## 🔮 Future Enhancements
-
-```mermaid
-timeline
-    title Roadmap
-    Next : 🔐 JWT Auth & RBAC : Restrict student CRUD to admins and faculty
-    Soon : 🔗 Course Enrollment : Mongoose ref links students to course IDs
-    Later : 📎 Document & PDF Uploads : Multer + cloud object storage
-    Planned : 📤 CSV Export : Gradebook and attendance reports
-```
-
-- [ ] **JWT Authentication & RBAC**
-- [ ] **Course Enrollment Relationships** via Mongoose `ref`
-- [ ] **Document & PDF Uploads** with Multer and cloud storage
-- [ ] **CSV Data Export** for gradebooks and attendance
 
 
 ---
