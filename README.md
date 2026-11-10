@@ -62,12 +62,14 @@
 
 | # | Section | # | Section |
 |:-:|:--|:-:|:--|
-| 1 | [🌟 Project Overview](#-project-overview) | 8 | [🍃 MongoDB Configuration](#-mongodb-configuration) |
-| 2 | [🎯 Objectives](#-objectives) | 9 | [🔌 API Documentation](#-api-documentation) |
-| 3 | [🛠️ Tech Stack](#%EF%B8%8F-tech-stack) | 11 | [📸 Screenshots & Demo](#-screenshots--demonstration) |
-| 4 | [🏛️ System Architecture](#%EF%B8%8F-system-architecture) | 12 | [🧪 Testing](#-testing--verification) |
-| 5 | [📂 Folder Structure](#-project-folder-structure) | 13 | [🔮 Future Enhancements](#-future-enhancements) |
-| 6 | [🚀 Quickstart](#-quickstart) | 14 | [👤 Author](#-author) |
+| 1 | [🌟 Project Overview](#-project-overview) | 9 | [🔐 Environment Variables](#-environment-variables) |
+| 2 | [🎯 Objectives](#-objectives) | 10 | [🍃 MongoDB Configuration](#-mongodb-configuration) |
+| 3 | [✨ Key Features](#-key-features) | 11 | [🔌 API Documentation](#-api-documentation) |
+| 4 | [🛠️ Tech Stack](#%EF%B8%8F-tech-stack) | 12 | [⚙️ CRUD Implementation](#%EF%B8%8F-crud-implementation) |
+| 5 | [🏛️ System Architecture](#%EF%B8%8F-system-architecture) | 13 | [📸 Screenshots & Demo](#-screenshots--demonstration) |
+| 6 | [📂 Folder Structure](#-project-folder-structure) | 14 | [🧪 Testing](#-testing--verification) |
+| 7 | [📋 Prerequisites](#-prerequisites) | 15 | [👤 Author](#-author) |
+| 8 | [🚀 Quickstart](#-quickstart) | | |
 
 </details>
 
@@ -756,7 +758,7 @@ All responses follow a standardized JSON envelope.
 ### **Dhruvi Mittal**
 
 **RV University** — School of Computer Science & Engineering
-*B.Sc. (Hons) Computer Science • Specialization in Cloud Computing*
+*B.Sc. Computer Science • Specialization in Cloud Computing*
 *CS3301 — Full Stack Development*
 
 <a href="https://github.com/Dhruvi-tech"><img src="https://img.shields.io/badge/GitHub-Dhruvi--tech-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
