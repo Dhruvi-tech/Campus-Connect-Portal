@@ -1,118 +1,195 @@
 <div align="center">
 
-<!-- Local SVG Institutional Showcase Banner -->
+<br/><br/>
+
 <img src="./assets/banner.svg" alt="Campus Connect Portal Banner" width="100%" />
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=16&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=620&height=32&lines=Modern+Full-Stack+Campus+Operating+System;CS3301+Full+Stack+Development+•+Experiment+7;MongoDB+Database+Operations+•+Mongoose+REST+API" height="32" alt="Typing SVG" />
+<br/><br/>
+
+<p>
+  <img src="https://img.shields.io/badge/Course-CS3301-07182f?style=for-the-badge&logo=bookstack&logoColor=86efac" alt="Course" />
+  <img src="https://img.shields.io/badge/Experiment-07-0d5c3a?style=for-the-badge&logo=target&logoColor=white" alt="Experiment" />
+  <img src="https://img.shields.io/badge/RV%20University-a61c1c?style=for-the-badge&logo=google-classroom&logoColor=white" alt="Institution" />
+  <img src="https://img.shields.io/badge/Status-Live-10B981?style=for-the-badge&logo=statuspage&logoColor=white" alt="Status" />
 </p>
 
-<p align="center">
-  <a href="https://github.com/Dhruvi-tech/Campus-Connect-Portal"><img src="https://img.shields.io/badge/Course-CS3301%20Full%20Stack-07182f?style=flat-square&logo=bookstack&logoColor=86efac" alt="Course" /></a>
-  <a href="https://github.com/Dhruvi-tech"><img src="https://img.shields.io/badge/Architect-Dhruvi%20Mittal-0d5c3a?style=flat-square&logo=github&logoColor=white" alt="Architect" /></a>
-  <a href="https://rvu.edu.in"><img src="https://img.shields.io/badge/Institution-RV%20University-a61c1c?style=flat-square&logo=google-classroom&logoColor=white" alt="Institution" /></a>
-  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-Mongoose%208-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" /></a>
-  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.2-06B6D4?style=flat-square&logo=react&logoColor=white" alt="React" /></a>
-  <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/Express-4.21-10B981?style=flat-square&logo=express&logoColor=white" alt="Express" /></a>
-  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-24.x-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node" /></a>
+<br/>
+
+<p>
+  <img src="https://img.shields.io/badge/React-19.2-06B6D4?style=flat-square&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-8.2-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Express-4.21-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/Node.js-24.x-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node" />
+  <img src="https://img.shields.io/badge/MongoDB-Mongoose%208-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Axios-1.19-5A29E4?style=flat-square&logo=axios&logoColor=white" alt="Axios" />
 </p>
 
-<!-- Quick Navigation Bar -->
-<p align="center">
-  <a href="#-project-overview"><b>Overview</b></a> &nbsp;•&nbsp;
-  <a href="#-key-features"><b>Key Features</b></a> &nbsp;•&nbsp;
-  <a href="#-technologies-used"><b>Tech Stack</b></a> &nbsp;•&nbsp;
-  <a href="#-system-architecture"><b>Architecture</b></a> &nbsp;•&nbsp;
-  <a href="#-api-documentation"><b>API Docs</b></a> &nbsp;•&nbsp;
-  <a href="#-crud-operations"><b>CRUD Logic</b></a> &nbsp;•&nbsp;
-  <a href="#-screenshots-and-demonstration"><b>Screenshots</b></a> &nbsp;•&nbsp;
-  <a href="#-quickstart--installation"><b>Quickstart</b></a> &nbsp;•&nbsp;
-  <a href="#-author"><b>Author</b></a>
+<br/>
+
+<p>
+  <img src="https://komarev.com/ghpvc/?username=Dhruvi-tech-campus-connect&label=Repo%20Views&color=10b981&style=flat-square" alt="Views" />
+  <a href="https://github.com/Dhruvi-tech/Campus-Connect-Portal/stargazers"><img src="https://img.shields.io/github/stars/Dhruvi-tech/Campus-Connect-Portal?style=flat-square&color=f59e0b&logo=github" alt="Stars" /></a>
+  <a href="https://github.com/Dhruvi-tech/Campus-Connect-Portal/network/members"><img src="https://img.shields.io/github/forks/Dhruvi-tech/Campus-Connect-Portal?style=flat-square&color=06b6d4&logo=github" alt="Forks" /></a>
+  <img src="https://img.shields.io/github/last-commit/Dhruvi-tech/Campus-Connect-Portal?style=flat-square&color=10b981" alt="Last commit" />
 </p>
+
+<br/>
+
+<h3>
+  <a href="#-project-overview">Overview</a> &nbsp;•&nbsp;
+  <a href="#-key-features">Features</a> &nbsp;•&nbsp;
+  <a href="#%EF%B8%8F-tech-stack">Tech Stack</a> &nbsp;•&nbsp;
+  <a href="#%EF%B8%8F-system-architecture">Architecture</a> &nbsp;•&nbsp;
+  <a href="#-api-documentation">API</a> &nbsp;•&nbsp;
+  <a href="#-screenshots--demonstration">Screenshots</a> &nbsp;•&nbsp;
+  <a href="#-quickstart">Quickstart</a>
+</h3>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
 </div>
+
 
 ---
 
 ## 📑 Table of Contents
 
-- [🌟 Project Overview](#-project-overview)
-- [🎯 Objectives](#-objectives)
-- [✨ Key Features](#-key-features)
-- [🛠️ Technologies Used](#️-technologies-used)
-- [🏛️ System Architecture](#️-system-architecture)
-- [📂 Project Folder Structure](#-project-folder-structure)
-- [📋 Prerequisites](#-prerequisites)
-- [🚀 Quickstart & Installation](#-quickstart--installation)
-- [🔐 Environment Variables](#-environment-variables)
-- [🍃 MongoDB Database Configuration](#-mongodb-database-configuration)
-- [🔌 API Documentation](#-api-documentation)
-- [⚙️ CRUD Operations Implementation](#️-crud-operations-implementation)
-- [📸 Screenshots and Demonstration](#-screenshots-and-demonstration)
-  - [A. Application Interface](#a-application-interface)
-  - [B. Student Management & CRUD Suite](#b-student-management--crud-suite)
-  - [C. Backend & REST API Verification](#c-backend--rest-api-verification)
-  - [D. MongoDB Database Evidence](#d-mongodb-database-evidence)
-- [🧪 Testing & Verification](#-testing--verification)
-- [🔮 Future Enhancements](#-future-enhancements)
-- [👤 Author & Academic Details](#-author--academic-details)
+<details open>
+<summary><b>Click to collapse / expand</b></summary>
+<br/>
+
+| # | Section | # | Section |
+|:-:|:--|:-:|:--|
+| 1 | [🌟 Project Overview](#-project-overview) | 8 | [🍃 MongoDB Configuration](#-mongodb-configuration) |
+| 2 | [🎯 Objectives](#-objectives) | 9 | [🔌 API Documentation](#-api-documentation) |
+| 3 | [✨ Key Features](#-key-features) | 10 | [⚙️ CRUD Implementation](#%EF%B8%8F-crud-implementation) |
+| 4 | [🛠️ Tech Stack](#%EF%B8%8F-tech-stack) | 11 | [📸 Screenshots & Demo](#-screenshots--demonstration) |
+| 5 | [🏛️ System Architecture](#%EF%B8%8F-system-architecture) | 12 | [🧪 Testing](#-testing--verification) |
+| 6 | [📂 Folder Structure](#-project-folder-structure) | 13 | [🔮 Future Enhancements](#-future-enhancements) |
+| 7 | [🚀 Quickstart](#-quickstart) | 14 | [👤 Author](#-author) |
+
+</details>
+
 
 ---
 
 ## 🌟 Project Overview
 
-**Campus Connect Portal** is a production-grade full-stack academic management platform engineered for **RV University's School of Computer Science & Engineering (CS3301 - Full Stack Development)**. 
+**Campus Connect Portal** is a production-grade full-stack academic management platform engineered for **RV University's School of Computer Science & Engineering (CS3301 – Full Stack Development)**.
 
-The application unifies student, faculty, and administrative operations into a single role-adaptive portal. Building upon the component-based architecture of Experiment 5 and the RESTful Express services of Experiment 6, **Experiment 7** integrates persistent document storage utilizing **MongoDB** and the **Mongoose ODM**. The system features real-time bidirectional synchronization between a React 19 frontend client and an Express 4 REST backend, enabling complete CRUD lifecycle management, schema enforcement, uppercase unique USN indexing, and instant client feedback.
+The application unifies student, faculty, and administrative operations into a single role-adaptive portal. Building on the component architecture of **Experiment 5** and the RESTful Express services of **Experiment 6**, **Experiment 7** adds persistent document storage with **MongoDB** and the **Mongoose ODM**.
+
+> 💡 A React 19 client stays in real-time sync with an Express 4 REST backend, delivering a full CRUD lifecycle, schema enforcement, unique uppercase USN indexing, and instant UI feedback.
+
+<div align="center">
+
+```mermaid
+flowchart LR
+    E5["🧩 Exp 5<br/>React Components"] --> E6["🔌 Exp 6<br/>Express REST"] --> E7["🍃 Exp 7<br/>MongoDB + Mongoose"]
+    style E5 fill:#07182f,stroke:#06b6d4,color:#fff
+    style E6 fill:#0a2240,stroke:#10b981,color:#fff
+    style E7 fill:#062b19,stroke:#47A248,color:#fff
+```
+
+</div>
+
 
 ---
 
 ## 🎯 Objectives
 
-1. **Enterprise Full-Stack Architecture:** Transition from transient in-memory arrays to persistent, scalable NoSQL document persistence with MongoDB.
-2. **Schema Modeling & Validation:** Define strict Mongoose schemas with type safety, trimming, uppercase transformation, uniqueness constraints, and numerical boundary checks.
-3. **Asynchronous RESTful Pipeline:** Implement non-blocking `async`/`await` Express route handlers with standardized HTTP status codes and centralized exception handling.
-4. **Interactive Component Integration:** Design a dedicated React 19 `StudentManager` interface with responsive forms, dynamic table rendering, inline editing, and modal confirmation dialogs.
-5. **Quality Assurance & Verification:** Validate all endpoints and workflows via automated testing, live browser interaction, and direct `mongosh` database inspection.
+| | Objective | What it delivers |
+|:-:|:--|:--|
+| 🏢 | **Enterprise Full-Stack Architecture** | Move from transient in-memory arrays to persistent, scalable NoSQL storage |
+| 🧬 | **Schema Modeling & Validation** | Strict Mongoose schemas: type safety, trimming, uppercase transforms, uniqueness, numeric bounds |
+| ⚡ | **Async RESTful Pipeline** | Non-blocking `async/await` handlers, standard HTTP codes, centralized error handling |
+| 🎨 | **Interactive Components** | `StudentManager` with responsive forms, dynamic tables, inline edit, confirm dialogs |
+| ✅ | **Quality Assurance** | Endpoints verified via automation, live browser runs, and direct `mongosh` inspection |
+
 
 ---
 
 ## ✨ Key Features
 
-* **🎓 MongoDB Student Management Suite:**
-  * **Add Student Record:** Form supporting Student Name, University USN, Department/Major, and Academic Marks ($0 \le \text{marks} \le 100$).
-  * **Live Records Table:** Dynamic rendering of enrolled students with custom status codes and dynamic academic grade badges (Distinction $A^+$, First Class $A$, Second Class $B$, Remedial $F$).
-  * **Inline Edit & Update (PUT):** Pre-populates existing student details into the form and saves modifications back to MongoDB.
-  * **Safe Deletion Workflow (DELETE):** Browser-native confirmation modal prevents accidental data loss and triggers immediate table reconciliation.
-  * **Refresh Persistence:** Guaranteed state preservation across page reloads backed by persistent MongoDB collection storage.
-* **🛡️ Real-Time Validation & Duplicate Prevention:**
-  * Proactive client-side and backend schema validation rejecting scores below 0 or above 100.
-  * Duplicate USN detection preventing registration conflicts with clear user feedback.
-* **📢 Campus Circulars & Interactive Notice Board:**
-  * Categorized announcement stream (Urgent, New, Event, Official) with pop-up detailed guidelines modal dialogs.
-* **📝 Enrolled Course Assignments Tracker:**
-  * Interactive task management with dynamic toggle between `Pending` and `Submitted ✓` states.
-* **📊 Course Attendance Tracker:**
-  * Real-time percentage calculator and visual attendance progress bar with interactive `+ Check In` lecture simulation.
-* **👤 Student Academic Profile:**
-  * Student telemetry view displaying full name, SRN, semester, CGPA, and editable bio status.
-* **🩺 Telemetry & Health Monitoring:**
-  * Standardized `/health` diagnostic endpoint reporting server uptime and live operational status.
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🎓 Student Management Suite
+- **Add Student** – Name, USN, Department, Marks (`0 ≤ marks ≤ 100`)
+- **Live Records Table** – dynamic grade badges
+  - 🟢 Distinction **A+**
+  - 🔵 First Class **A**
+  - 🟡 Second Class **B**
+  - 🔴 Remedial **F**
+- **Inline Edit (PUT)** – pre-fills the form and saves to MongoDB
+- **Safe Delete** – confirmation modal + instant table reconciliation
+- **Refresh Persistence** – state survives page reloads
+
+</td>
+<td width="50%" valign="top">
+
+### 🛡️ Validation & Safety
+- Client-side **and** schema-level validation
+- Rejects marks `< 0` or `> 100`
+- **Duplicate USN** detection with clear feedback
+- Centralized error envelopes (`success`, `message`)
+
+### 🩺 Health Monitoring
+- `/health` endpoint reports uptime and live status
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📢 Notice Board
+- Categorized stream: **Urgent · New · Event · Official**
+- Pop-up detail modals with full guidelines
+
+### 📝 Assignments Tracker
+- Toggle `Pending` ⇄ `Submitted ✓`
+
+</td>
+<td width="50%" valign="top">
+
+### 📊 Attendance Tracker
+- Live percentage + visual progress bar
+- `+ Check In` lecture simulation
+
+### 👤 Student Profile
+- Name, SRN, semester, CGPA, editable bio
+
+</td>
+</tr>
+</table>
+
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=react,vite,nodejs,express,mongodb,js,html,css,postman,vscode,git,github&theme=dark" alt="Tech icons" />
+
+</div>
+
+<br/>
 
 | Layer | Technology | Version | Purpose |
-| :--- | :--- | :--- | :--- |
-| **Frontend Framework** | [React](https://react.dev/) | `19.2.8` | Component-based modular user interface |
-| **Build & Dev Tool** | [Vite](https://vite.dev/) | `8.2.1` | Next-generation frontend tooling and fast HMR bundler |
-| **HTTP Client** | [Axios](https://axios-http.com/) | `1.19.0` | Promise-based asynchronous HTTP request layer |
-| **Backend Runtime** | [Node.js](https://nodejs.org/) | `24.x` | High-performance asynchronous JavaScript engine |
-| **Web Application Server** | [Express](https://expressjs.com/) | `4.21.2` | RESTful routing, middleware pipeline, and JSON parsing |
-| **Database ODM** | [Mongoose](https://mongoosejs.com/) | `8.13.2` | Object Data Modeling, schema validation, and queries |
-| **NoSQL Database** | [MongoDB](https://www.mongodb.com/) | `7.0 / 8.0` | Scalable document-oriented persistence repository |
-| **Automation & QA** | [Puppeteer-Core](https://pptr.dev/) | `25.11.0` | End-to-end browser automation & live screenshot capture |
+|:--|:--|:-:|:--|
+| 🖥️ Frontend | [React](https://react.dev/) | `19.2.8` | Component-based modular UI |
+| ⚡ Build Tool | [Vite](https://vite.dev/) | `8.2.1` | Fast HMR bundler |
+| 📡 HTTP Client | [Axios](https://axios-http.com/) | `1.19.0` | Promise-based request layer |
+| 🟢 Runtime | [Node.js](https://nodejs.org/) | `24.x` | Async JavaScript engine |
+| 🚂 Server | [Express](https://expressjs.com/) | `4.21.2` | Routing, middleware, JSON parsing |
+| 🧬 ODM | [Mongoose](https://mongoosejs.com/) | `8.13.2` | Schemas, validation, queries |
+| 🍃 Database | [MongoDB](https://www.mongodb.com/) | `7.0 / 8.0` | Document-oriented persistence |
+| 🤖 QA | [Puppeteer-Core](https://pptr.dev/) | `25.11.0` | E2E automation & screenshots |
+
 
 ---
 
@@ -155,135 +232,170 @@ flowchart TD
     style Database fill:#062b19,stroke:#47A248,stroke-width:2px,color:#fff
 ```
 
+### 🔄 Request Lifecycle
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor U as 👩‍🎓 User
+    participant R as ⚛️ React UI
+    participant A as 📡 Axios
+    participant E as 🚂 Express
+    participant M as 🧬 Mongoose
+    participant D as 🍃 MongoDB
+    U->>R: Submit "Add Student" form
+    R->>A: createStudent(payload)
+    A->>E: POST /api/students
+    E->>M: Student.create(data)
+    M->>D: Validate + insert document
+    D-->>M: Saved BSON doc
+    M-->>E: Student document
+    E-->>A: 201 Created + JSON envelope
+    A-->>R: Resolve promise
+    R-->>U: ✅ Success banner + table refresh
+```
+
+
 ---
 
 ## 📂 Project Folder Structure
 
+<details>
+<summary><b>📁 Click to expand the full tree</b></summary>
+
 ```
 campus-connect-portal/
-├── assets/                          # Core branding assets & vector dividers
+├── assets/                          # Branding assets & vector dividers
 │   ├── banner.svg                   # Institutional SVG header banner
 │   └── footer.svg                   # Wave divider SVG footer
-├── client/                          # React 19 Frontend Application (Vite)
+├── client/                          # React 19 Frontend (Vite)
 │   ├── public/                      # Static client assets
 │   ├── src/
-│   │   ├── assets/                  # Campus carousel images & slide assets
+│   │   ├── assets/                  # Carousel images & slide assets
 │   │   ├── components/
-│   │   │   ├── AuthModule.jsx       # Student login and registration modal
-│   │   │   ├── DetailModal.jsx      # Bulletin guidelines popup dialog
-│   │   │   ├── ItemCard.jsx         # Modular card component with badges
+│   │   │   ├── AuthModule.jsx       # Login & registration modal
+│   │   │   ├── DetailModal.jsx      # Bulletin guidelines popup
+│   │   │   ├── ItemCard.jsx         # Modular card with badges
 │   │   │   ├── PortalHeader.jsx     # Slate portal header with back action
-│   │   │   ├── PortalView.jsx       # Dynamic role portal tabs container
-│   │   │   ├── RoleCard.jsx         # Interactive role selection cards
-│   │   │   ├── StudentManager.jsx   # Experiment 7 MongoDB CRUD management suite
-│   │   │   └── TabBar.jsx           # Clean tabbed navigation component
+│   │   │   ├── PortalView.jsx       # Role portal tabs container
+│   │   │   ├── RoleCard.jsx         # Role selection cards
+│   │   │   ├── StudentManager.jsx   # Exp 7 MongoDB CRUD suite
+│   │   │   └── TabBar.jsx           # Tabbed navigation
 │   │   ├── services/
-│   │   │   └── studentService.js    # Axios client communicating with /api/students
-│   │   ├── App.jsx                  # Root React application component
-│   │   ├── main.jsx                 # Client entry point mounting React root
-│   │   ├── portal.css               # Portal styling and component animations
-│   │   └── style.css                # Global responsive layout stylesheet
-│   ├── eslint.config.js             # ESLint configuration with Node/browser globals
-│   ├── index.html                   # HTML5 document template
-│   ├── package.json                 # Client dependencies & scripts
-│   └── vite.config.js               # Vite bundler configuration (strict port 5173)
-├── docs/                            # Documentation and evidence assets
-│   └── screenshots/                 # Genuine live project execution screenshots (01 to 26)
-│       ├── 01-homepage.png
-│       ├── ...                      # (Complete screenshot gallery 01 to 26)
-│       └── 26-database-collection.png
-├── server/                          # Node.js Express Backend Application
+│   │   │   └── studentService.js    # Axios client for /api/students
+│   │   ├── App.jsx                  # Root component
+│   │   ├── main.jsx                 # Entry point
+│   │   ├── portal.css               # Portal styling & animations
+│   │   └── style.css                # Global responsive styles
+│   ├── eslint.config.js            # ESLint config
+│   ├── index.html                   # HTML5 template
+│   ├── package.json                 # Client deps & scripts
+│   └── vite.config.js               # Vite config (strict port 5173)
+├── docs/
+│   └── screenshots/                 # Live execution screenshots (01–26)
+├── server/                          # Node.js Express Backend
 │   ├── models/
-│   │   └── Student.js               # Mongoose Student schema definition
+│   │   └── Student.js               # Mongoose Student schema
 │   ├── routes/
-│   │   ├── assignmentRoutes.js      # Experiment 6 assignment API endpoints
-│   │   └── studentRoutes.js         # Experiment 7 MongoDB CRUD route handlers
+│   │   ├── assignmentRoutes.js      # Exp 6 assignment endpoints
+│   │   └── studentRoutes.js         # Exp 7 MongoDB CRUD handlers
 │   ├── src/
 │   │   ├── config/
-│   │   │   └── db.js                # Mongoose database connection utility
+│   │   │   └── db.js                # Mongoose connection utility
 │   │   └── models/
 │   │       └── Student.js           # Re-export compatibility shim
-│   ├── .env                         # Server environment variables
-│   ├── .env.example                 # Environment configuration template
-│   ├── index.js                     # Express application bootstrap & route mounting
-│   └── package.json                 # Server dependencies & scripts
-├── .gitignore                       # Git exclusion rules
-├── package.json                     # Root project metadata
-└── README.md                        # Master project documentation
+│   ├── .env                         # Environment variables
+│   ├── .env.example                 # Environment template
+│   ├── index.js                     # Express bootstrap & route mounting
+│   └── package.json                 # Server deps & scripts
+├── .gitignore
+├── package.json                     # Root metadata
+└── README.md
 ```
+
+</details>
+
 
 ---
 
 ## 📋 Prerequisites
 
-Before running the application locally, ensure you have the following installed:
+| Tool | Required Version |
+|:--|:--|
+| 🟢 **Node.js** | `v18.0.0`+ (`v24.x` recommended) |
+| 📦 **npm** | `v9.0.0`+ |
+| 🍃 **MongoDB Community Server** | `v6.0`+ running on `mongodb://127.0.0.1:27017` |
+| 🐚 **MongoDB Shell (`mongosh`)** | For direct database validation |
 
-- **Node.js:** `v18.0.0` or higher (`v24.x` recommended)
-- **npm:** `v9.0.0` or higher
-- **MongoDB Community Server:** `v6.0` or higher (actively running on `mongodb://127.0.0.1:27017`)
-- **MongoDB Shell (`mongosh`):** For direct database validation
+Verify MongoDB connectivity:
 
-Verify your local MongoDB service connectivity:
 ```bash
 mongosh --eval "db.adminCommand({ ping: 1 })"
 # Expected output: { ok: 1 }
 ```
 
+
 ---
 
-## 🚀 Quickstart & Installation
+## 🚀 Quickstart
 
-### Step 1: Clone the Repository
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 1️⃣ Clone
 ```bash
 git clone https://github.com/Dhruvi-tech/Campus-Connect-Portal.git
 cd Campus-Connect-Portal
 ```
 
-### Step 2: Configure & Start Backend Server
+### 2️⃣ Start the Backend
 ```bash
-# Navigate to backend directory
 cd server
-
-# Install backend dependencies
 npm install
-
-# Start Express server in development mode
 npm run dev
-# 📡 Server starts on: http://localhost:5000
-# 🍃 Auto-connects to MongoDB: mongodb://127.0.0.1:27017/campus_connect
 ```
+> 📡 `http://localhost:5000`
+> 🍃 Auto-connects to `mongodb://127.0.0.1:27017/campus_connect`
 
-### Step 3: Launch Frontend Client
-Open a new terminal window:
+</td>
+<td width="50%" valign="top">
+
+### 3️⃣ Launch the Frontend
+Open a **new terminal**:
 ```bash
-# Navigate to client directory
 cd client
-
-# Install frontend dependencies
 npm install
-
-# Start Vite development server
 npm run dev
-# 🚀 Client opens on: http://localhost:5173
 ```
+> 🚀 `http://localhost:5173`
+
+### ✅ You're live!
+Open the portal → **Student Management** tab → add your first record.
+
+</td>
+</tr>
+</table>
+
 
 ---
 
 ## 🔐 Environment Variables
 
-The server configuration is managed via `server/.env`. A template is provided in `server/.env.example`:
+Configured in `server/.env` (template: `server/.env.example`):
 
-| Variable | Default Value | Description |
-| :--- | :--- | :--- |
-| `PORT` | `5000` | Port on which the Express REST API listens |
-| `MONGO_URI` | `mongodb://127.0.0.1:27017/campus_connect` | MongoDB connection URI string |
-| `NODE_ENV` | `development` | Runtime environment mode |
+| Variable | Default | Description |
+|:--|:--|:--|
+| `PORT` | `5000` | Express REST API port |
+| `MONGO_URI` | `mongodb://127.0.0.1:27017/campus_connect` | MongoDB connection string |
+| `NODE_ENV` | `development` | Runtime mode |
+
 
 ---
 
-## 🍃 MongoDB Database Configuration
+## 🍃 MongoDB Configuration
 
-The application utilizes Mongoose 8 to connect to the `campus_connect` database. The `Student` schema is defined in [`server/models/Student.js`](file:///c:/Users/Lenovo/Desktop/campus-connect-portal/server/models/Student.js) with strict schema-level validations:
+Mongoose 8 connects to the `campus_connect` database. The schema lives in `server/models/Student.js`:
 
 ```javascript
 import mongoose from 'mongoose';
@@ -323,28 +435,27 @@ const Student = mongoose.model('Student', studentSchema);
 export default Student;
 ```
 
+
 ---
 
 ## 🔌 API Documentation
 
-All API responses follow standardized JSON envelopes.
+All responses follow a standardized JSON envelope.
 
-### REST Endpoints Summary
+| Method | Endpoint | Status | Description |
+|:-:|:--|:-:|:--|
+| ![GET](https://img.shields.io/badge/GET-10B981?style=flat-square) | `/api/students` | `200` | Retrieve all students |
+| ![GET](https://img.shields.io/badge/GET-10B981?style=flat-square) | `/api/students/:id` | `200` | Retrieve one student by `_id` |
+| ![POST](https://img.shields.io/badge/POST-3B82F6?style=flat-square) | `/api/students` | `201` | Create a new student |
+| ![PUT](https://img.shields.io/badge/PUT-F59E0B?style=flat-square) | `/api/students/:id` | `200` | Update profile and marks |
+| ![DELETE](https://img.shields.io/badge/DELETE-EF4444?style=flat-square) | `/api/students/:id` | `200` | Permanently delete a student |
+| ![GET](https://img.shields.io/badge/GET-10B981?style=flat-square) | `/api/assignments` | `200` | Fetch course assignments |
+| ![GET](https://img.shields.io/badge/GET-10B981?style=flat-square) | `/health` | `200` | Health & uptime monitor |
 
-| HTTP Method | Endpoint | Success Status | Description |
-| :---: | :--- | :---: | :--- |
-| `GET` | `/api/students` | `200 OK` | Retrieve all student documents |
-| `GET` | `/api/students/:id` | `200 OK` | Retrieve one student by MongoDB `_id` |
-| `POST` | `/api/students` | `201 Created` | Create and register a new student |
-| `PUT` | `/api/students/:id` | `200 OK` | Update student profile and marks |
-| `DELETE` | `/api/students/:id` | `200 OK` | Permanently delete student document |
-| `GET` | `/api/assignments` | `200 OK` | Fetch all course assignments |
-| `GET` | `/health` | `200 OK` | Diagnostic health & uptime monitor |
+<details>
+<summary><b>➕ Create Student — <code>POST /api/students</code></b></summary>
 
-### Request & Response Examples
-
-#### 1. Create Student (`POST /api/students`)
-* **Request Body:**
+**Request**
 ```json
 {
   "name": "Rahul Sharma",
@@ -353,7 +464,8 @@ All API responses follow standardized JSON envelopes.
   "marks": 75
 }
 ```
-* **Response (`201 Created`):**
+
+**Response · `201 Created`**
 ```json
 {
   "success": true,
@@ -369,15 +481,19 @@ All API responses follow standardized JSON envelopes.
   }
 }
 ```
+</details>
 
-#### 2. Update Student (`PUT /api/students/:id`)
-* **Request Body:**
+<details>
+<summary><b>✏️ Update Student — <code>PUT /api/students/:id</code></b></summary>
+
+**Request**
 ```json
 {
   "marks": 85
 }
 ```
-* **Response (`200 OK`):**
+
+**Response · `200 OK`**
 ```json
 {
   "success": true,
@@ -392,248 +508,290 @@ All API responses follow standardized JSON envelopes.
   }
 }
 ```
+</details>
 
-#### 3. Validation Error Response (`400 Bad Request`)
+<details>
+<summary><b>⚠️ Validation Error — <code>400 Bad Request</code></b></summary>
+
 ```json
 {
   "success": false,
   "message": "Validation Error: marks must be a number between 0 and 100"
 }
 ```
+</details>
 
-#### 4. Duplicate USN Response (`400 Bad Request`)
+<details>
+<summary><b>🚫 Duplicate USN — <code>400 Bad Request</code></b></summary>
+
 ```json
 {
   "success": false,
   "message": "Duplicate USN Error: A student with USN \"BSC001\" already exists"
 }
 ```
+</details>
+
 
 ---
 
-## ⚙️ CRUD Operations Implementation
+## ⚙️ CRUD Implementation
 
-| Operation | Handler Method | Mongoose Query | Client Service Call |
-| :--- | :--- | :--- | :--- |
-| **Create (POST)** | `router.post('/')` | `Student.create(data)` | `createStudent(payload)` |
-| **Read All (GET)** | `router.get('/')` | `Student.find().sort({ createdAt: -1 })` | `getStudents()` |
-| **Read One (GET)** | `router.get('/:id')` | `Student.findById(id)` | `getStudent(id)` |
-| **Update (PUT)** | `router.put('/:id')` | `Student.findByIdAndUpdate(id, data, { new: true, runValidators: true })` | `updateStudent(id, payload)` |
-| **Delete (DELETE)** | `router.delete('/:id')` | `Student.findByIdAndDelete(id)` | `deleteStudent(id)` |
+| Operation | Route Handler | Mongoose Query | Client Call |
+|:--|:--|:--|:--|
+| ➕ **Create** | `router.post('/')` | `Student.create(data)` | `createStudent(payload)` |
+| 📖 **Read All** | `router.get('/')` | `Student.find().sort({ createdAt: -1 })` | `getStudents()` |
+| 🔍 **Read One** | `router.get('/:id')` | `Student.findById(id)` | `getStudent(id)` |
+| ✏️ **Update** | `router.put('/:id')` | `Student.findByIdAndUpdate(id, data, { new: true, runValidators: true })` | `updateStudent(id, payload)` |
+| 🗑️ **Delete** | `router.delete('/:id')` | `Student.findByIdAndDelete(id)` | `deleteStudent(id)` |
 
----
-
-## 📸 Screenshots and Demonstration
-
-All screenshots below represent **100% genuine execution outputs** captured from the live application, terminal sessions, Postman test runs, and database shells.
-
-### A. Application Interface
-
-#### 1. Main Campus Connect Portal Homepage
-![Campus Connect Portal Homepage](docs/screenshots/01-homepage.png)
-*Campus Connect Portal landing view displaying the RV University navigation bar, CS3301 hero banner, and animated campus highlights carousel.*
 
 ---
 
-#### 2. Role Dashboard (Student Portal)
-![Student Portal Dashboard](docs/screenshots/02-dashboard.png)
-*Active Student Portal workspace showing header badge, modular navigation tabs, and campus circular notices.*
+## 📸 Screenshots & Demonstration
 
----
+<div align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+</div>
 
-#### 3. Student Authentication — Login View
-![Student Login Interface](docs/screenshots/03-login.png)
-*RV University authentication module in Login mode with email and password input fields.*
+> 📷 Every screenshot is a **genuine execution output** from the live app, terminal sessions, Postman runs, and database shells.
 
----
+### 🖥️ A. Application Interface
 
-#### 4. Student Authentication — Registration View
-![Student Registration Interface](docs/screenshots/04-registration.png)
-*Interactive registration view allowing new students to create an account with name, email, and password.*
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/01-homepage.png" alt="Homepage" /><br/>
+<b>1 · Homepage</b><br/>
+<sub>RV University nav bar, CS3301 hero banner, animated campus carousel.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/02-dashboard.png" alt="Student Portal Dashboard" /><br/>
+<b>2 · Student Portal Dashboard</b><br/>
+<sub>Header badge, modular tabs, and campus circular notices.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/03-login.png" alt="Login" /><br/>
+<b>3 · Authentication — Login</b><br/>
+<sub>RV University login with email and password.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/04-registration.png" alt="Registration" /><br/>
+<b>4 · Authentication — Registration</b><br/>
+<sub>New students create an account with name, email, and password.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/05-navigation.png" alt="Navigation" /><br/>
+<b>5 · Navigation & Modules</b><br/>
+<sub>Notices & Events, Student Management (MongoDB), Assignments, Attendance, Profile.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img src="docs/screenshots/13-responsive-view.png" alt="Responsive mobile view" width="220" /><br/>
+<b>6 · Responsive Mobile View</b><br/>
+<sub>390px viewport: adaptive grids, wrapping cards, touch-friendly controls.</sub>
+</td>
+</tr>
+</table>
 
----
+### 🎓 B. Student Management & CRUD Suite
 
-#### 5. Navigation & Available Modules
-![Navigation Bar and Modules](docs/screenshots/05-navigation.png)
-*Portal navigation bar displaying all integrated tabs: Notices & Events, Student Management (MongoDB), Assignments, Track Attendance, and Profile.*
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/06-student-management.png" alt="Student Management" /><br/>
+<b>7 · Suite Overview</b><br/>
+<sub>Live DB connection telemetry, document counter, full layout.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/07-add-student.png" alt="Add Student" /><br/>
+<b>8 · Add Student Form</b><br/>
+<sub>Validated inputs for Name, USN, Department, Marks.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/08-student-list.png" alt="Student list" /><br/>
+<b>9 · Records Table</b><br/>
+<sub>BSON IDs, uppercase USNs, marks, grade badges, action buttons.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/09-edit-student.png" alt="Edit student" /><br/>
+<b>10 · Inline Edit (PUT Mode)</b><br/>
+<sub>Form auto-fills; switches to “Save Changes (PUT)” with cancel.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/10-update-confirmation.png" alt="Update confirmation" /><br/>
+<b>11 · Update Confirmation</b><br/>
+<sub>Success banner: marks updated to 85, reflected instantly.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/11-delete-confirmation.png" alt="Delete confirmation" /><br/>
+<b>12 · Delete & Reconciliation</b><br/>
+<sub>Modal confirmation, permanent removal, table re-render.</sub>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" valign="top">
+<img src="docs/screenshots/12-validation.png" alt="Validation banner" width="50%" /><br/>
+<b>13 · Frontend Validation</b><br/>
+<sub>Real-time alert when marks exceed the allowed range (e.g. 150).</sub>
+</td>
+</tr>
+</table>
 
----
+### 🔌 C. Backend & REST API Verification
 
-#### 6. Responsive Mobile View
-![Responsive Mobile Interface](docs/screenshots/13-responsive-view.png)
-*Mobile-responsive layout rendered on a 390px viewport verifying adaptive grid structures, card wrapping, and touch-friendly controls.*
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/14-server-running.png" alt="Server running" /><br/>
+<b>14 · Express Server Running</b><br/>
+<sub>PowerShell: <code>npm run dev</code> with nodemon 3.1.9 on port 5000.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/17-api-create.png" alt="POST" /><br/>
+<b>15 · POST — Create (201)</b><br/>
+<sub>Returns MongoDB <code>_id</code> and timestamps.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/18-api-get-all.png" alt="GET all" /><br/>
+<b>16 · GET — All Students (200)</b><br/>
+<sub>Structured array of every enrolled student.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/19-api-get-single.png" alt="GET one" /><br/>
+<b>17 · GET — Single by ID (200)</b><br/>
+<sub>Single student document lookup.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/20-api-update.png" alt="PUT" /><br/>
+<b>18 · PUT — Update Marks (200)</b><br/>
+<sub>Rahul Sharma's marks updated from 75 to 85.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/21-api-delete.png" alt="DELETE" /><br/>
+<b>19 · DELETE — Remove by ID (200)</b><br/>
+<sub>Document deletion confirmed.</sub>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" valign="top">
+<img src="docs/screenshots/22-api-validation.png" alt="Duplicate USN" width="50%" /><br/>
+<b>20 · Duplicate USN Handling</b><br/>
+<sub>Duplicate <code>BSC001</code> → <code>400 Bad Request</code>, shown as an alert in the React UI.</sub>
+</td>
+</tr>
+</table>
 
----
+### 🍃 D. MongoDB Database Evidence
 
-### B. Student Management & CRUD Suite
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/24-mongodb-service.png" alt="MongoDB service" /><br/>
+<b>21 · MongoDB Service Running</b><br/>
+<sub><code>Get-Service -Name MongoDB</code> → Running on 27017.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/25-mongodb-ping.png" alt="MongoDB ping" /><br/>
+<b>22 · Loopback Ping</b><br/>
+<sub><code>db.adminCommand({ ping: 1 })</code> → <code>{ ok: 1 }</code>.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/26-database-collection.png" alt="Database and collection" /><br/>
+<b>23 · Database & Collection</b><br/>
+<sub><code>campus_connect</code>, <code>students</code>, document counts.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/15-mongodb-connection.png" alt="Connection" /><br/>
+<b>24 · Express ↔ MongoDB Handshake</b><br/>
+<sub>Mongoose logs <code>MongoDB Connected: 127.0.0.1 / campus_connect</code>.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/16-student-schema.png" alt="Schema" /><br/>
+<b>25 · Mongoose Schema Code</b><br/>
+<sub>Validation rules, unique uppercase USN index, timestamps.</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<img width="100%" src="docs/screenshots/23-mongodb-records.png" alt="mongosh records" /><br/>
+<b>26 · <code>mongosh</code> Verification</b><br/>
+<sub><code>db.students.find().pretty()</code> shows persistent BSON with ISO timestamps.</sub>
+</td>
+</tr>
+</table>
 
-#### 7. Student Management Suite Overview
-![Student Management Interface](docs/screenshots/06-student-management.png)
-*Dedicated MongoDB Student Management suite displaying live database connection telemetry, document counter, and full layout.*
-
----
-
-#### 8. Add Student Form
-![Add Student Form](docs/screenshots/07-add-student.png)
-*Clean input form for student registration with validation for Student Name, University USN, Department, and Marks.*
-
----
-
-#### 9. Enrolled Student Records Table
-![Student Records Table](docs/screenshots/08-student-list.png)
-*Live student records table displaying registered students with BSON IDs, uppercase USN codes, marks, dynamic performance grade badges, and action triggers.*
-
----
-
-#### 10. Inline Record Editing (PUT Mode)
-![Edit Student Form](docs/screenshots/09-edit-student.png)
-*Active edit state: form fields automatically populate with selected student data, switching to "Save Changes (PUT)" with a cancel option.*
-
----
-
-#### 11. Update Confirmation & Real-Time Sync
-![Update Confirmation Banner](docs/screenshots/10-update-confirmation.png)
-*Success notification banner confirming student marks updated to 85, immediately reflected in the records table.*
-
----
-
-#### 12. Delete Confirmation & State Reconciliation
-![Delete Confirmation Banner](docs/screenshots/11-delete-confirmation.png)
-*Modal confirmation execution verifying the permanent removal of the record from MongoDB and table re-render.*
-
----
-
-#### 13. Frontend Input Validation Banner
-![Input Validation Banner](docs/screenshots/12-validation.png)
-*Real-time validation error alert triggered when marks exceed the permissible range (e.g., entering 150).*
-
----
-
-### C. Backend & REST API Verification
-
-#### 14. Express Backend Server Running
-![Backend Server Running](docs/screenshots/14-server-running.png)
-*Windows PowerShell terminal execution of `cd server; npm run dev` with nodemon 3.1.9, actively listening on port 5000 with student and assignment API routes registered.*
-
----
-
-#### 15. POST — Create Student (201 Created)
-![POST Create Student API](docs/screenshots/17-api-create.png)
-*Postman REST client executing `POST http://localhost:5000/api/students` with student payload, returning `201 Created` with MongoDB `_id` and timestamps.*
-
----
-
-#### 16. GET — Retrieve All Students (200 OK)
-![GET All Students API](docs/screenshots/18-api-get-all.png)
-*Postman REST client executing `GET http://localhost:5000/api/students` returning `200 OK` and a structured array of all enrolled students.*
-
----
-
-#### 17. GET — Retrieve Single Student by ID (200 OK)
-![GET Single Student API](docs/screenshots/19-api-get-single.png)
-*Postman REST client executing `GET http://localhost:5000/api/students/:id` verifying single student document lookup.*
-
----
-
-#### 18. PUT — Update Student Marks (200 OK)
-![PUT Update Student API](docs/screenshots/20-api-update.png)
-*Postman REST client executing `PUT http://localhost:5000/api/students/:id` updating Rahul Sharma's marks from 75 to 85 with `200 OK`.*
-
----
-
-#### 19. DELETE — Remove Student by ID (200 OK)
-![DELETE Student API](docs/screenshots/21-api-delete.png)
-*Postman REST client executing `DELETE http://localhost:5000/api/students/:id` confirming document deletion with status `200 OK`.*
-
----
-
-#### 20. Backend Validation & Duplicate USN Error Handling
-![Duplicate USN Error Banner](docs/screenshots/22-api-validation.png)
-*Full-stack error handling demonstration: submitting a duplicate USN (`BSC001`) causes backend rejection (`400 Bad Request`) rendered dynamically as an error alert in the React UI.*
-
----
-
-### D. MongoDB Database Evidence
-
-#### 21. MongoDB Windows Service Running
-![MongoDB Windows Service](docs/screenshots/24-mongodb-service.png)
-*Windows PowerShell `Get-Service -Name MongoDB` command verifying active `Running` status on port 27017.*
-
----
-
-#### 22. MongoDB Loopback Ping Handshake
-![MongoDB Loopback Ping](docs/screenshots/25-mongodb-ping.png)
-*mongosh administrative loopback command `db.adminCommand({ ping: 1 })` returning `{ ok: 1 }`.*
-
----
-
-#### 23. Database & Collection Verification
-![Database and Collection](docs/screenshots/26-database-collection.png)
-*mongosh verifying database `campus_connect`, `students` collection, and document counts.*
-
----
-
-#### 24. Express Backend MongoDB Connection
-![MongoDB Connection Handshake](docs/screenshots/15-mongodb-connection.png)
-*Windows Terminal running Express 4 backend with Mongoose 8 logging `MongoDB Connected: 127.0.0.1 / Database: campus_connect`.*
-
----
-
-#### 25. Mongoose Student Schema Code
-![Mongoose Student Schema](docs/screenshots/16-student-schema.png)
-*VS Code editor displaying `server/models/Student.js` schema with validation rules, unique uppercase USN index, and timestamps.*
-
----
-
-#### 26. Direct MongoDB Shell (`mongosh`) Document Verification
-![MongoDB Shell Records Verification](docs/screenshots/23-mongodb-records.png)
-*Direct `mongosh` terminal inspection querying `db.students.find().pretty()`, verifying persistent BSON storage with ISO timestamps.*
 
 ---
 
 ## 🧪 Testing & Verification
 
-The application was validated across multiple dimensions:
+| Area | What was tested |
+|:--|:--|
+| 🖥️ **Frontend Integration** | Add / edit / delete via real DOM events in Edge and Chrome using Puppeteer; page-refresh persistence confirmed with zero state loss |
+| 🔌 **REST API** | All CRUD endpoints via Postman and Axios; edge cases: duplicate USNs, non-existent ObjectIds (`404`), marks `> 100`, empty required fields |
+| 🍃 **Database Integrity** | Direct BSON document creation and index adherence checked in `mongosh` |
 
-1. **Frontend Integration Testing:**
-   - Add, edit, and delete operations tested using genuine DOM events in Microsoft Edge and Google Chrome via Puppeteer.
-   - Page refresh persistence confirmed with zero loss of state.
-2. **Backend REST API Testing:**
-   - All CRUD endpoints evaluated using Postman and Axios client suites.
-   - Edge cases tested: duplicate USNs, non-existent ObjectIds (404), invalid marks (> 100), and empty required fields.
-3. **Database Integrity:**
-   - Validated direct BSON document creation and index adherence in `mongosh`.
 
 ---
 
 ## 🔮 Future Enhancements
 
-- **JWT Authentication & Role-Based Access Control (RBAC):** Restrict student CRUD management strictly to authorized administrators and faculty members.
-- **Course Enrollment Relationship:** Establish Mongoose `ref` relationships linking students directly to enrolled course IDs.
-- **Document & PDF Uploads:** Support file attachments for assignment submissions via Multer and cloud object storage.
-- **CSV Data Export:** One-click gradebook and attendance export for academic reporting.
+```mermaid
+timeline
+    title Roadmap
+    Next : 🔐 JWT Auth & RBAC : Restrict student CRUD to admins and faculty
+    Soon : 🔗 Course Enrollment : Mongoose ref links students to course IDs
+    Later : 📎 Document & PDF Uploads : Multer + cloud object storage
+    Planned : 📤 CSV Export : Gradebook and attendance reports
+```
+
+- [ ] **JWT Authentication & RBAC**
+- [ ] **Course Enrollment Relationships** via Mongoose `ref`
+- [ ] **Document & PDF Uploads** with Multer and cloud storage
+- [ ] **CSV Data Export** for gradebooks and attendance
+
 
 ---
 
-## 👤 Author & Academic Details
+## 👤 Author
 
 <div align="center">
 
-<img src="https://github.com/Dhruvi-tech.png" width="95" style="border-radius: 50%; border: 3px solid #107c41; box-shadow: 0 4px 14px rgba(0,0,0,0.3);" alt="Dhruvi Mittal Avatar" />
+<img src="https://github.com/Dhruvi-tech.png" width="110" height="110" style="border-radius: 50%;" alt="Dhruvi Mittal Avatar" />
 
 ### **Dhruvi Mittal**
-**RV University** — School of Computer Science & Engineering  
-*B.Sc. (Hons) Computer Science • Specialization in Cloud Computing*  
+
+**RV University** — School of Computer Science & Engineering
+*B.Sc. (Hons) Computer Science • Specialization in Cloud Computing*
 *CS3301 — Full Stack Development*
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub-Dhruvi--tech-181717?style=flat-square&logo=github)](https://github.com/Dhruvi-tech)
-[![Email](https://img.shields.io/badge/Email-dhruvimittalbsc24%40rvu.edu.in-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:dhruvimittalbsc24@rvu.edu.in)
+<a href="https://github.com/Dhruvi-tech"><img src="https://img.shields.io/badge/GitHub-Dhruvi--tech-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
+<a href="mailto:dhruvimittalbsc24@rvu.edu.in"><img src="https://img.shields.io/badge/Email-dhruvimittalbsc24%40rvu.edu.in-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+
+<br/><br/>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=15&duration=3500&pause=1200&color=10B981&center=true&vCenter=true&width=520&height=30&lines=Thanks+for+visiting+%E2%9C%A8;If+you+like+this+project%2C+drop+a+%E2%AD%90;Happy+coding!+%F0%9F%9A%80" alt="Thanks" />
 
 <br/>
 
-<!-- Local SVG Wave Footer -->
-<img src="./assets/footer.svg" alt="Footer Wave Divider" width="100%" />
-
 <sub>&copy; 2026 RV University • Campus Connect Portal • Engineered by Dhruvi Mittal</sub>
+
+<br/><br/>
+
+<img src="./assets/footer.svg" alt="Footer Wave Divider" width="100%" />
 
 </div>
